@@ -84,6 +84,7 @@ After loading a plugin just attach the debugger to `tcc` process.
 ###My actual plugin that will to make TCC awesome
 * Intercept all builtins to map ~ to home directory
 * Add launchers to open windows apps based on file extension
+* Figure out how to make TabComplete work with ~/ .. e.g. intercept tab key, then invoke TabComplete after reparsing path??
 
 
 ##Warning

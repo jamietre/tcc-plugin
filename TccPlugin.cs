@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using RGiesecke.DllExport;
-
+using TccPlugin.Parser;
 
 namespace TccPlugin
 {
@@ -47,7 +47,7 @@ namespace TccPlugin
             piInfo.pszEmail = "alien@outsharked.com";
             piInfo.pszWWW = "http://outsharked.com";
             piInfo.pszDescription = "Plugin Demo";
-            piInfo.pszFunctions = "_hello,@rev,UNKNOWN_CMD,CD,*key";
+            piInfo.pszFunctions = "_hello,@rev,UNKNOWN_CMD,CD,DIR,*key";
             piInfo.nMajor = 1;
             piInfo.nMinor = 0;
             piInfo.nBuild = 1;
@@ -59,6 +59,8 @@ namespace TccPlugin
         [DllExport("InitializePlugin", CallingConvention = CallingConvention.Cdecl)]
         public static int InitializePlugin()
         {
+
+            TakeCmdLib.MapPath = MapPath;
 #if DEBUG
             Console.WriteLine("Initialized");
 #endif
@@ -79,11 +81,20 @@ namespace TccPlugin
         [DllExport("CD", CallingConvention = CallingConvention.Cdecl)]
         public unsafe static uint CD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
-            string path = sb.ToString().Replace(" ~", "%HOMEDRIVE%%HOMEPATH%");
-            var expanded = TakeCmdLib.ExpandVariables(path);
+            
 
-            TakeCmdLib.CDD(expanded);
+            TakeCmdLib.CDD(sb.ToString());
             return 0;
+        }
+
+        [DllExport("DIR", CallingConvention = CallingConvention.Cdecl)]
+        public unsafe static uint DIR([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            var args = TakeCmdLib.ParseArgs(sb);
+            sb.Clear();
+            sb.Append(" "+args);
+
+            return TakeCmdLib.RETURN_DEFER;
         }
 
 
@@ -159,5 +170,15 @@ namespace TccPlugin
             return 0;
         }
 
+        private static string MapPath(string path)
+        {
+            if (path.StartsWith("~"))
+            {
+                path = TakeCmdLib.ExpandVariables("%HOMEDRIVE%%HOMEPATH%") + path.Substring(1);
+            }
+            path = path.Replace("/", "\\");
+
+            return path;
+        }
     }
 }

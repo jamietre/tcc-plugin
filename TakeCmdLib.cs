@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using TccPlugin.Parser;
 
 namespace TccPlugin
 {
@@ -14,7 +15,7 @@ namespace TccPlugin
         /// <summary>
         /// Command line buffer size
         /// </summary>
-        public const int BUF_SIZE = 512;
+        public const int BUF_SIZE = 508;
 
         /// <summary>
         /// Special return value that says continue to process same named command. You can use this to rewrite a 
@@ -32,6 +33,9 @@ namespace TccPlugin
         [DllImport("TakeCmd.dll")]
         private static extern uint Cdd_Cmd(char* command);
 
+        [DllImport("TakeCmd.dll")]
+        private static extern uint Dir_Cmd(char* command);
+
         [DllImport("TakeCmd.dll", EntryPoint="ExpandVariables")]
         private static extern uint TC_ExpandVariables(char* text, int recurse);
 
@@ -43,9 +47,9 @@ namespace TccPlugin
         /// Change directory
         /// </summary>
         /// <param name="path">The path to change to</param>
-        public static void CD(string path)
+        public static void CD(string args)
         {
-            exec(Cd_Cmd, path);
+            exec(Cd_Cmd, args);
         }
 
 
@@ -53,9 +57,18 @@ namespace TccPlugin
         /// Change directory (and drive, if applicable). Replaces CDD and CD
         /// </summary>
         /// <param name="path">The path to change to</param>
-        public static void CDD(string path)
+        public static void CDD(string args)
         {
-            exec(Cdd_Cmd, path);
+            exec(Cdd_Cmd, args);
+        }
+
+        /// <summary>
+        /// Change directory (and drive, if applicable). Replaces CDD and CD
+        /// </summary>
+        /// <param name="path">The path to change to</param>
+        public static void DIR(string args)
+        {
+            exec(Dir_Cmd, args);
         }
 
         /// <summary>
@@ -65,14 +78,27 @@ namespace TccPlugin
         /// <returns></returns>
         public static string ExpandVariables(string text)
         {
-            text = text.PadRight(BUF_SIZE);
-            
-            fixed (char* textPtr = text)
+            char[] chars = new char[BUF_SIZE];
+            text.CopyTo(0, chars,0,text.Length);
+
+            fixed (char* textPtr = chars)
             {
                 TC_ExpandVariables(textPtr, 0);
-                return text;
+                // wierd thing with padding end with zeros if new one is shorter
+                return new string(chars.Where(item => item != (char)0).ToArray());
             }
         }
+
+
+        /// <summary>
+        /// A default handler for mapping paths. Any method invoked involving a file path parameter
+        /// should automatically use this to pre-process the path (if present)
+        /// </summary>
+        /// <returns></returns>
+        public static Func<string, string> MapPath { 
+            get; set;
+        }
+        
         #endregion
 
         #region private methods
@@ -81,12 +107,35 @@ namespace TccPlugin
 
         private static uint exec(TCAction action, string text)
         {
+            var args = ParseArgs(text);
+
             uint result;
-            fixed (char* textPtr = text)
+            fixed (char* textPtr = args.ToString())
             {
                 result = action(textPtr);
             }
             return result;
+        }
+
+        public static CommandLineArgs ParseArgs(StringBuilder sb)
+        {
+            return ParseArgs(sb.ToString());
+        }
+
+        public static CommandLineArgs ParseArgs(string commandLine)
+        {
+            var cmd = new CommandLineArgs(commandLine);
+
+            if (MapPath != null) {
+                foreach (var arg in cmd.Where(item=>!item.IsSwitch))
+                {
+                    arg.Value = MapPath(arg.Value);
+
+                }
+            }
+
+            return cmd;
+
         }
 
         #endregion

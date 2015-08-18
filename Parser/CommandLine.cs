@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using RGiesecke.DllExport;
 
-namespace TccPlugin
+namespace TccPlugin.Parser
 {
     
     public unsafe class CommandLine

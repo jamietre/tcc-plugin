@@ -62,8 +62,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandLine.cs" />
+    <Compile Include="Parser\CommandLine.cs" />
     <Compile Include="KeyCodes.cs" />
+    <Compile Include="Parser\CommandLineArg.cs" />
+    <Compile Include="Parser\CommandLineArgs.cs" />
     <Compile Include="TakeCmdLib.cs" />
     <Compile Include="TccMethod.cs" />
     <Compile Include="TccMethodTypes.cs" />
@@ -75,10 +77,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="sdk\TakeCmd.h" />
     <Content Include="doc\TakeCmdAPI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TakeCmd\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages/UnmanagedExports.1.2.7/tools/RGiesecke.DllExport.targets" Condition="Exists('packages/UnmanagedExports.1.2.7/tools/RGiesecke.DllExport.targets')" />
