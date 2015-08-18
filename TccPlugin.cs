@@ -80,12 +80,10 @@ namespace TccPlugin
         public unsafe static uint CD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             string path = sb.ToString().Replace(" ~", "%HOMEDRIVE%%HOMEPATH%");
-            
             var expanded = TakeCmdLib.ExpandVariables(path);
 
             TakeCmdLib.CDD(expanded);
             return 0;
-            //return 0xFEDCBA98;
         }
 
 

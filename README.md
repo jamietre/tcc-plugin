@@ -43,14 +43,16 @@ TCC:
     > echo %@rev["abcde"]
     "edcba"
 
-You can define new functions, including ones that override existing ones:
+You can define new functions, including ones that override existing ones. For example, this makes `~` work in your paths for CD as an alias for home:
 
  
-    public static uint CD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+	public unsafe static uint CD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
     {
-        //special return values - says that I didn't do anything, defer to native CD
-        //.. but I could change the contents of command line first..
-        return 0xFEDCBA98;
+    	string path = sb.ToString().Replace(" ~", "%HOMEDRIVE%%HOMEPATH%");
+        var expanded = TakeCmdLib.ExpandVariables(path);
+
+        TakeCmdLib.CDD(expanded);
+        return 0;
     }
 
 
@@ -60,23 +62,29 @@ You can also capture every keystroke and rewrite the command line. This seems to
 
 ##API
 
-This library includes the scaffolding for a .NET wrapper of the TakeCmd.dll API. I haven't implemented much yet.
+This library includes the scaffolding for a .NET wrapper of the TakeCmd.dll API. I haven't implemented much yet other than `CD`.
 
 ##Debugging
 
 After loading a plugin just attach the debugger to `tcc` process.
 
-##Things to do
+##To Do
 
+###The Framework itself
+
+* Make most of this a reusable library
 * Can't figure out how to use PRE_EXEC, POST_EXEC -- seems to crash 
-* Can't figure out how to just invoke a command in the processor from the plugin
 * Want to abstract the attributes needed to expose methods; however my attempt to override `DllExport` didn't seem to work so maybe the library doesn't test for derived types.
-* Automatically generate `PluginInfo.pszFunctions` from code
-* Abstract basic framework (e.g. all required methods & keys)
+* Automatically generate `PluginInfo.pszFunctions` using reflection
 * Add a basic tool for loading config data from JSON at run time to simplify creating customizable plugins
 * Try to figure out what key codes mean
 * Try to figure out why we must space-pad the command line when replacing it with something shorter
 * Test 32 bit dll (only tried 64 so far)
+
+###My actual plugin that will to make TCC awesome
+* Intercept all builtins to map ~ to home directory
+* Add launchers to open windows apps based on file extension
+
 
 ##Warning
 
