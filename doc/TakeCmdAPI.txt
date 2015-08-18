@@ -1,0 +1,4486 @@
+﻿Export of public API from TakeCmd.lib
+
+This contains info about a number of methods not documented in TakeCmd.h from the
+offical SDK: https://jpsoft.com/all-downloads/plugins-take-command.html
+
+
+==================================================
+Function Name     : ASCIIToUnicode
+Address           : 0x1003c590
+Relative Address  : 0x0003c590
+Ordinal           : 1 (0x1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Activate_Cmd
+Address           : 0x10058800
+Relative Address  : 0x00058800
+Ordinal           : 2 (0x2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AddCommas
+Address           : 0x10061f40
+Relative Address  : 0x00061f40
+Ordinal           : 3 (0x3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AddQuotes
+Address           : 0x1003c800
+Relative Address  : 0x0003c800
+Ordinal           : 4 (0x4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AddToHistory
+Address           : 0x10035a50
+Relative Address  : 0x00035a50
+Ordinal           : 5 (0x5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AddVariableToList
+Address           : 0x100134b0
+Relative Address  : 0x000134b0
+Ordinal           : 6 (0x6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AddWildcardIfDirectory
+Address           : 0x1002d2c0
+Relative Address  : 0x0002d2c0
+Ordinal           : 7 (0x7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Alias_Cmd
+Address           : 0x10010bc0
+Relative Address  : 0x00010bc0
+Ordinal           : 8 (0x8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl AllocDup(wchar_t * __ptr64)
+Address           : 0x100576e0
+Relative Address  : 0x000576e0
+Ordinal           : 9 (0x9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AllocMem
+Address           : 0x10057670
+Relative Address  : 0x00057670
+Ordinal           : 10 (0xa)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AnsiString
+Address           : 0x100051c0
+Relative Address  : 0x000051c0
+Ordinal           : 11 (0xb)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : AsciiToDouble
+Address           : 0x10060310
+Relative Address  : 0x00060310
+Ordinal           : 12 (0xc)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Assoc_Cmd
+Address           : 0x10058fe0
+Relative Address  : 0x00058fe0
+Ordinal           : 13 (0xd)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Attrib_Cmd
+Address           : 0x10026e30
+Relative Address  : 0x00026e30
+Ordinal           : 14 (0xe)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : BDebugger_Cmd
+Address           : 0x10001b20
+Relative Address  : 0x00001b20
+Ordinal           : 15 (0xf)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Battext_Cmd
+Address           : 0x10088a40
+Relative Address  : 0x00088a40
+Ordinal           : 16 (0x10)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Beep_Cmd
+Address           : 0x10088ba0
+Relative Address  : 0x00088ba0
+Ordinal           : 17 (0x11)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : BreakHandler
+Address           : 0x10003840
+Relative Address  : 0x00003840
+Ordinal           : 18 (0x12)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl BreakOut(int)
+Address           : 0x100038d0
+Relative Address  : 0x000038d0
+Ordinal           : 19 (0x13)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Break_Cmd
+Address           : 0x100596d0
+Relative Address  : 0x000596d0
+Ordinal           : 20 (0x14)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CPUUsage
+Address           : 0x1006c620
+Relative Address  : 0x0006c620
+Ordinal           : 21 (0x15)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CallHtmlHelp
+Address           : 0x1005fda0
+Relative Address  : 0x0005fda0
+Ordinal           : 22 (0x16)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Call_Cmd
+Address           : 0x10088d80
+Relative Address  : 0x00088d80
+Ordinal           : 23 (0x17)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void * __ptr64 __cdecl CallocMem(unsigned __int64,unsigned __int64)
+Address           : 0x10057680
+Relative Address  : 0x00057680
+Ordinal           : 24 (0x18)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Cancel_Cmd
+Address           : 0x10088e20
+Relative Address  : 0x00088e20
+Ordinal           : 25 (0x19)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Case_Cmd
+Address           : 0x10088ed0
+Relative Address  : 0x00088ed0
+Ordinal           : 26 (0x1a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Cd_Cmd
+Address           : 0x10077030
+Relative Address  : 0x00077030
+Ordinal           : 27 (0x1b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Cdd_Cmd
+Address           : 0x10077270
+Relative Address  : 0x00077270
+Ordinal           : 28 (0x1c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CenterWindow
+Address           : 0x10057c60
+Relative Address  : 0x00057c60
+Ordinal           : 29 (0x1d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ChangeDirectory
+Address           : 0x1002f8b0
+Relative Address  : 0x0002f8b0
+Ordinal           : 30 (0x1e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ChangeIcon
+Address           : 0x10057e20
+Relative Address  : 0x00057e20
+Ordinal           : 31 (0x1f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Chcp_Cmd
+Address           : 0x10078af0
+Relative Address  : 0x00078af0
+Ordinal           : 32 (0x20)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl ClearEditLine(wchar_t * __ptr64)
+Address           : 0x10072e70
+Relative Address  : 0x00072e70
+Ordinal           : 33 (0x21)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl CloseBatchFile(void)
+Address           : 0x10002870
+Relative Address  : 0x00002870
+Ordinal           : 34 (0x22)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl CloseDirSearchHandles(int,struct FILESEARCH * __ptr64)
+Address           : 0x10072750
+Relative Address  : 0x00072750
+Ordinal           : 35 (0x23)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Cls_Cmd
+Address           : 0x10079d80
+Relative Address  : 0x00079d80
+Ordinal           : 36 (0x24)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Cmds_Cmd
+Address           : 0x1003a090
+Relative Address  : 0x0003a090
+Ordinal           : 37 (0x25)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ColorPrintf
+Address           : 0x1003da50
+Relative Address  : 0x0003da50
+Ordinal           : 38 (0x26)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Color_Cmd
+Address           : 0x10078ba0
+Relative Address  : 0x00078ba0
+Ordinal           : 39 (0x27)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Command
+Address           : 0x100625a0
+Relative Address  : 0x000625a0
+Ordinal           : 40 (0x28)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CompareFiles
+Address           : 0x1002e0b0
+Relative Address  : 0x0002e0b0
+Ordinal           : 41 (0x29)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CompareStrings
+Address           : 0x1000f750
+Relative Address  : 0x0000f750
+Ordinal           : 42 (0x2a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl CompressNTFS(wchar_t * __ptr64,int)
+Address           : 0x100579c0
+Relative Address  : 0x000579c0
+Ordinal           : 43 (0x2b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl ConsoleBreakHandler(unsigned long)
+Address           : 0x100036b0
+Relative Address  : 0x000036b0
+Ordinal           : 44 (0x2c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void * __ptr64 __cdecl ConsoleScreenBuffer(void * __ptr64)
+Address           : 0x100057c0
+Relative Address  : 0x000057c0
+Ordinal           : 45 (0x2d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CopyDescriptions
+Address           : 0x10005dd0
+Relative Address  : 0x00005dd0
+Ordinal           : 46 (0x2e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CopyFilename
+Address           : 0x1002caf0
+Relative Address  : 0x0002caf0
+Ordinal           : 47 (0x2f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CopyFromClipboard
+Address           : 0x10003c30
+Relative Address  : 0x00003c30
+Ordinal           : 48 (0x30)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CopyTextToClipboard
+Address           : 0x10003b70
+Relative Address  : 0x00003b70
+Ordinal           : 49 (0x31)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CopyToClipboard
+Address           : 0x10003a10
+Relative Address  : 0x00003a10
+Ordinal           : 50 (0x32)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Copy_Cmd
+Address           : 0x1001f200
+Relative Address  : 0x0001f200
+Ordinal           : 51 (0x33)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CrLf
+Address           : 0x1003dc00
+Relative Address  : 0x0003dc00
+Ordinal           : 52 (0x34)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : CreateLink
+Address           : 0x10041e00
+Relative Address  : 0x00041e00
+Ordinal           : 53 (0x35)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl CutEgets(void)
+Address           : 0x100731b0
+Relative Address  : 0x000731b0
+Ordinal           : 54 (0x36)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : __int64 __cdecl DateTimeDlgProc(struct HWND__ * __ptr64,unsigned int,unsigned __int64,__int64)
+Address           : 0x1007ea10
+Relative Address  : 0x0007ea10
+Ordinal           : 55 (0x37)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Date_Cmd
+Address           : 0x1007d230
+Relative Address  : 0x0007d230
+Ordinal           : 56 (0x38)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl DefaultINI(wchar_t * __ptr64)
+Address           : 0x10038650
+Relative Address  : 0x00038650
+Ordinal           : 57 (0x39)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl DefineStrings(void)
+Address           : 0x10010110
+Relative Address  : 0x00010110
+Ordinal           : 58 (0x3a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Del_Cmd
+Address           : 0x10024a30
+Relative Address  : 0x00024a30
+Ordinal           : 59 (0x3b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Delay_Cmd
+Address           : 0x10089060
+Relative Address  : 0x00089060
+Ordinal           : 60 (0x3c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl DeleteFromHistory(wchar_t * __ptr64)
+Address           : 0x10035960
+Relative Address  : 0x00035960
+Ordinal           : 61 (0x3d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Describe_Cmd
+Address           : 0x100059d0
+Relative Address  : 0x000059d0
+Ordinal           : 62 (0x3e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : DestroyFolder
+Address           : 0x1003e060
+Relative Address  : 0x0003e060
+Ordinal           : 63 (0x3f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl DirHistoryStart(void)
+Address           : 0x10034ee0
+Relative Address  : 0x00034ee0
+Ordinal           : 64 (0x40)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : DirHistory_Cmd
+Address           : 0x10034f00
+Relative Address  : 0x00034f00
+Ordinal           : 65 (0x41)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Dir_Cmd
+Address           : 0x10009d70
+Relative Address  : 0x00009d70
+Ordinal           : 66 (0x42)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Dirs_Cmd
+Address           : 0x10078c20
+Relative Address  : 0x00078c20
+Ordinal           : 67 (0x43)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl DisableInternalCommand(wchar_t * __ptr64)
+Address           : 0x1003a570
+Relative Address  : 0x0003a570
+Ordinal           : 68 (0x44)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl DisplayPluginNames(wchar_t * __ptr64)
+Address           : 0x10066080
+Relative Address  : 0x00066080
+Ordinal           : 69 (0x45)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : DoPropertySheet
+Address           : 0x10036000
+Relative Address  : 0x00036000
+Ordinal           : 70 (0x46)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl DoRunUpdater(wchar_t * __ptr64)
+Address           : 0x100804f0
+Relative Address  : 0x000804f0
+Ordinal           : 71 (0x47)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Do_Cmd
+Address           : 0x10089150
+Relative Address  : 0x00089150
+Ordinal           : 72 (0x48)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : DrawHline_Cmd
+Address           : 0x10089c00
+Relative Address  : 0x00089c00
+Ordinal           : 73 (0x49)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : DrawVline_Cmd
+Address           : 0x10089c10
+Relative Address  : 0x00089c10
+Ordinal           : 74 (0x4a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Drawbox_Cmd
+Address           : 0x10089c20
+Relative Address  : 0x00089c20
+Ordinal           : 75 (0x4b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : EatKeystrokes
+Address           : 0x1003f0a0
+Relative Address  : 0x0003f0a0
+Ordinal           : 76 (0x4c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : EchoErr_Cmd
+Address           : 0x10089f10
+Relative Address  : 0x00089f10
+Ordinal           : 77 (0x4d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Echo_Cmd
+Address           : 0x10089f60
+Relative Address  : 0x00089f60
+Ordinal           : 78 (0x4e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : EchosErr_Cmd
+Address           : 0x1008a0b0
+Relative Address  : 0x0008a0b0
+Ordinal           : 79 (0x4f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Echos_Cmd
+Address           : 0x1008a100
+Relative Address  : 0x0008a100
+Ordinal           : 80 (0x50)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : EjectMedia_Cmd
+Address           : 0x10076cb0
+Relative Address  : 0x00076cb0
+Ordinal           : 81 (0x51)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : EnableSignals
+Address           : 0x10003620
+Relative Address  : 0x00003620
+Ordinal           : 82 (0x52)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl EnableWow64FsRedirection(int)
+Address           : 0x100586a0
+Relative Address  : 0x000586a0
+Ordinal           : 83 (0x53)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : EndOfList
+Address           : 0x10013a40
+Relative Address  : 0x00013a40
+Ordinal           : 84 (0x54)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Endlocal_Cmd
+Address           : 0x1008a150
+Relative Address  : 0x0008a150
+Ordinal           : 85 (0x55)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ErrorMsgBox
+Address           : 0x10013f60
+Relative Address  : 0x00013f60
+Ordinal           : 86 (0x56)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : EscapeLine
+Address           : 0x1001e7d0
+Relative Address  : 0x0001e7d0
+Ordinal           : 87 (0x57)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Eset_Cmd
+Address           : 0x10010c20
+Relative Address  : 0x00010c20
+Ordinal           : 88 (0x58)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Evaluate
+Address           : 0x100619a0
+Relative Address  : 0x000619a0
+Ordinal           : 89 (0x59)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Except_Cmd
+Address           : 0x1007a050
+Relative Address  : 0x0007a050
+Ordinal           : 90 (0x5a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 * Executables
+Address           : 0x100d9c50
+Relative Address  : 0x000d9c50
+Ordinal           : 91 (0x5b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl ExitBatchFile(void)
+Address           : 0x10002e50
+Relative Address  : 0x00002e50
+Ordinal           : 92 (0x5c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Exit_Cmd
+Address           : 0x1007a6e0
+Relative Address  : 0x0007a6e0
+Ordinal           : 93 (0x5d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ExpandAliases
+Address           : 0x10015330
+Relative Address  : 0x00015330
+Ordinal           : 94 (0x5e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl ExpandFunctionsInFileName(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1002c620
+Relative Address  : 0x0002c620
+Ordinal           : 95 (0x5f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ExpandVariables
+Address           : 0x100160e0
+Relative Address  : 0x000160e0
+Ordinal           : 96 (0x60)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ExtensionPart
+Address           : 0x1002d780
+Relative Address  : 0x0002d780
+Ordinal           : 97 (0x61)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : External
+Address           : 0x1001ea00
+Relative Address  : 0x0001ea00
+Ordinal           : 98 (0x62)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ExtractFileSummary
+Address           : 0x10033cb0
+Relative Address  : 0x00033cb0
+Ordinal           : 99 (0x63)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : __int64 __cdecl FFindDlgProc(struct HWND__ * __ptr64,unsigned int,unsigned __int64,__int64)
+Address           : 0x10006d50
+Relative Address  : 0x00006d50
+Ordinal           : 100 (0x64)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Ffind_Cmd
+Address           : 0x100451b0
+Relative Address  : 0x000451b0
+Ordinal           : 101 (0x65)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : FilenamePart
+Address           : 0x1002d5c0
+Relative Address  : 0x0002d5c0
+Ordinal           : 102 (0x66)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : FindProcess
+Address           : 0x10067d90
+Relative Address  : 0x00067d90
+Ordinal           : 103 (0x67)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : FindWindowFromPID
+Address           : 0x10058610
+Relative Address  : 0x00058610
+Ordinal           : 104 (0x68)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : FmtMsgBox
+Address           : 0x1003ae10
+Relative Address  : 0x0003ae10
+Ordinal           : 105 (0x69)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : For_Cmd
+Address           : 0x1008a7d0
+Relative Address  : 0x0008a7d0
+Ordinal           : 106 (0x6a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ForceForegroundWindow
+Address           : 0x10057bd0
+Relative Address  : 0x00057bd0
+Ordinal           : 107 (0x6b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : FormatDate
+Address           : 0x1007e2b0
+Relative Address  : 0x0007e2b0
+Ordinal           : 108 (0x6c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : FreeMem
+Address           : 0x10057660
+Relative Address  : 0x00057660
+Ordinal           : 109 (0x6d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Free_Cmd
+Address           : 0x1007a7f0
+Relative Address  : 0x0007a7f0
+Ordinal           : 110 (0x6e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Ftype_Cmd
+Address           : 0x10059850
+Relative Address  : 0x00059850
+Ordinal           : 111 (0x6f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : FuzzyFindWindow
+Address           : 0x100585d0
+Relative Address  : 0x000585d0
+Ordinal           : 112 (0x70)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetAbsCursorPosition
+Address           : 0x10004750
+Relative Address  : 0x00004750
+Ordinal           : 113 (0x71)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetAbsScrRows
+Address           : 0x100050b0
+Relative Address  : 0x000050b0
+Ordinal           : 114 (0x72)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetAlias
+Address           : 0x100132e0
+Relative Address  : 0x000132e0
+Ordinal           : 115 (0x73)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetAttribute
+Address           : 0x10004850
+Relative Address  : 0x00004850
+Ordinal           : 116 (0x74)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetClipboardLine
+Address           : 0x10003d80
+Relative Address  : 0x00003d80
+Ordinal           : 117 (0x75)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl GetClipboardLines(void)
+Address           : 0x10003fa0
+Relative Address  : 0x00003fa0
+Ordinal           : 118 (0x76)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetColors
+Address           : 0x10004350
+Relative Address  : 0x00004350
+Ordinal           : 119 (0x77)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetCursorPosition
+Address           : 0x10004700
+Relative Address  : 0x00004700
+Ordinal           : 120 (0x78)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetCursorRange
+Address           : 0x10004790
+Relative Address  : 0x00004790
+Ordinal           : 121 (0x79)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetDriveTypeEx
+Address           : 0x100808c0
+Relative Address  : 0x000808c0
+Ordinal           : 122 (0x7a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetExeType
+Address           : 0x100144a0
+Relative Address  : 0x000144a0
+Ordinal           : 123 (0x7b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetFileDialog
+Address           : 0x1002c1c0
+Relative Address  : 0x0002c1c0
+Ordinal           : 124 (0x7c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetFileLine
+Address           : 0x1002f350
+Relative Address  : 0x0002f350
+Ordinal           : 125 (0x7d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetFileSize64
+Address           : 0x10084850
+Relative Address  : 0x00084850
+Ordinal           : 126 (0x7e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl GetFilesAndFoldersDialog(struct HWND__ * __ptr64,wchar_t * __ptr64,wchar_t * __ptr64,wchar_t * __ptr64,wchar_t * __ptr64,unsigned int)
+Address           : 0x1002c420
+Relative Address  : 0x0002c420
+Ordinal           : 127 (0x7f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetFolderDialog
+Address           : 0x1002bf80
+Relative Address  : 0x0002bf80
+Ordinal           : 128 (0x80)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetFolderSize
+Address           : 0x100848f0
+Relative Address  : 0x000848f0
+Ordinal           : 129 (0x81)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetFuzzyDir
+Address           : 0x1003e190
+Relative Address  : 0x0003e190
+Ordinal           : 130 (0x82)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetKeystroke
+Address           : 0x1003fdd0
+Relative Address  : 0x0003fdd0
+Ordinal           : 131 (0x83)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetLine
+Address           : 0x1002e6a0
+Relative Address  : 0x0002e6a0
+Ordinal           : 132 (0x84)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl GetListSize(wchar_t * __ptr64)
+Address           : 0x10013a80
+Relative Address  : 0x00013a80
+Ordinal           : 133 (0x85)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetLongName
+Address           : 0x1002d900
+Relative Address  : 0x0002d900
+Ordinal           : 134 (0x86)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetMousePosition
+Address           : 0x1003fe40
+Relative Address  : 0x0003fe40
+Ordinal           : 135 (0x87)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetParentPID
+Address           : 0x10067b80
+Relative Address  : 0x00067b80
+Ordinal           : 136 (0x88)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetParentProcessName
+Address           : 0x10067c00
+Relative Address  : 0x00067c00
+Ordinal           : 137 (0x89)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl GetProcessNameFromPID(unsigned long,wchar_t * __ptr64)
+Address           : 0x10067d10
+Relative Address  : 0x00067d10
+Ordinal           : 138 (0x8a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetRandom
+Address           : 0x10062000
+Relative Address  : 0x00062000
+Ordinal           : 139 (0x8b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl GetRange(wchar_t * __ptr64,struct RANGES * __ptr64,int)
+Address           : 0x10069330
+Relative Address  : 0x00069330
+Ordinal           : 140 (0x8c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetRowOffset
+Address           : 0x100050e0
+Relative Address  : 0x000050e0
+Ordinal           : 141 (0x8d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetScrCols
+Address           : 0x10005100
+Relative Address  : 0x00005100
+Ordinal           : 142 (0x8e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetScrRows
+Address           : 0x10005080
+Relative Address  : 0x00005080
+Ordinal           : 143 (0x8f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl GetSearchAttributes(wchar_t * __ptr64,struct FILESEARCH * __ptr64)
+Address           : 0x10075f80
+Relative Address  : 0x00075f80
+Ordinal           : 144 (0x90)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetServerNames
+Address           : 0x10075310
+Relative Address  : 0x00075310
+Ordinal           : 145 (0x91)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetShareNames
+Address           : 0x100757c0
+Relative Address  : 0x000757c0
+Ordinal           : 146 (0x92)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetShortName
+Address           : 0x1002d260
+Relative Address  : 0x0002d260
+Ordinal           : 147 (0x93)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl GetSwitches(wchar_t * __ptr64,wchar_t * __ptr64,long * __ptr64,int,struct FILESEARCH * __ptr64)
+Address           : 0x10076750
+Relative Address  : 0x00076750
+Ordinal           : 148 (0x94)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetTempDirectory
+Address           : 0x10030270
+Relative Address  : 0x00030270
+Ordinal           : 149 (0x95)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetToken
+Address           : 0x1007f250
+Relative Address  : 0x0007f250
+Ordinal           : 150 (0x96)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetVariableList
+Address           : 0x10013320
+Relative Address  : 0x00013320
+Ordinal           : 151 (0x97)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GetWOW64
+Address           : 0x1002f790
+Relative Address  : 0x0002f790
+Ordinal           : 152 (0x98)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Global_Cmd
+Address           : 0x1007aaf0
+Relative Address  : 0x0007aaf0
+Ordinal           : 153 (0x99)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Gosub_Cmd
+Address           : 0x1008bce0
+Relative Address  : 0x0008bce0
+Ordinal           : 154 (0x9a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : GotoURL
+Address           : 0x1003a7b0
+Relative Address  : 0x0003a7b0
+Ordinal           : 155 (0x9b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Goto_Cmd
+Address           : 0x1008c7e0
+Relative Address  : 0x0008c7e0
+Ordinal           : 156 (0x9c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Help_Cmd
+Address           : 0x1005fc70
+Relative Address  : 0x0005fc70
+Ordinal           : 157 (0x9d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl HistoryStart(void)
+Address           : 0x10034ef0
+Relative Address  : 0x00034ef0
+Ordinal           : 158 (0x9e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : History_Cmd
+Address           : 0x10034f10
+Relative Address  : 0x00034f10
+Ordinal           : 159 (0x9f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : HoldSignals
+Address           : 0x10003610
+Relative Address  : 0x00003610
+Ordinal           : 160 (0xa0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl HtmlDecode(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003cf30
+Relative Address  : 0x0003cf30
+Ordinal           : 161 (0xa1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl HtmlEncode(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003ce40
+Relative Address  : 0x0003ce40
+Ordinal           : 162 (0xa2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl IDE_Cmd(wchar_t * __ptr64)
+Address           : 0x10001c70
+Relative Address  : 0x00001c70
+Ordinal           : 163 (0xa3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : If_Cmd
+Address           : 0x1008c860
+Relative Address  : 0x0008c860
+Ordinal           : 164 (0xa4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Iff_Cmd
+Address           : 0x1008ca80
+Relative Address  : 0x0008ca80
+Ordinal           : 165 (0xa5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl IniClear(struct INIFILE * __ptr64)
+Address           : 0x10038870
+Relative Address  : 0x00038870
+Ordinal           : 166 (0xa6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl IniLine(wchar_t * __ptr64,struct INIFILE * __ptr64,int,int,wchar_t * __ptr64 * __ptr64)
+Address           : 0x10038c60
+Relative Address  : 0x00038c60
+Ordinal           : 167 (0xa7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl IniParse(wchar_t * __ptr64,struct INIFILE * __ptr64,unsigned int)
+Address           : 0x10038910
+Relative Address  : 0x00038910
+Ordinal           : 168 (0xa8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl IniReset(wchar_t * __ptr64,struct INIFILE * __ptr64,wchar_t * __ptr64 * __ptr64)
+Address           : 0x100393d0
+Relative Address  : 0x000393d0
+Ordinal           : 169 (0xa9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl InitListArray(int)
+Address           : 0x10082070
+Relative Address  : 0x00082070
+Ordinal           : 170 (0xaa)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : InitPopupFont
+Address           : 0x100825c0
+Relative Address  : 0x000825c0
+Ordinal           : 171 (0xab)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : InitializeDLL
+Address           : 0x10039870
+Relative Address  : 0x00039870
+Ordinal           : 172 (0xac)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl InitializeGlobalVariables(void)
+Address           : 0x100103f0
+Relative Address  : 0x000103f0
+Ordinal           : 173 (0xad)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl InitializeIniFile(void)
+Address           : 0x100380b0
+Relative Address  : 0x000380b0
+Ordinal           : 174 (0xae)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Inkey_Cmd
+Address           : 0x1008cb90
+Relative Address  : 0x0008cb90
+Ordinal           : 175 (0xaf)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Input_Cmd
+Address           : 0x1008cba0
+Relative Address  : 0x0008cba0
+Ordinal           : 176 (0xb0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : InsertPathInFilename
+Address           : 0x1002dc30
+Relative Address  : 0x0002dc30
+Ordinal           : 177 (0xb1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : IntToAscii
+Address           : 0x1003c170
+Relative Address  : 0x0003c170
+Ordinal           : 178 (0xb2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl IsDirectory(wchar_t * __ptr64)
+Address           : 0x10030f60
+Relative Address  : 0x00030f60
+Ordinal           : 179 (0xb3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl IsValidCursorPosition(int,int)
+Address           : 0x10072cc0
+Relative Address  : 0x00072cc0
+Ordinal           : 180 (0xb4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Keybd_Cmd
+Address           : 0x10059ec0
+Relative Address  : 0x00059ec0
+Ordinal           : 181 (0xb5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Keys_Cmd
+Address           : 0x1005a1c0
+Relative Address  : 0x0005a1c0
+Ordinal           : 182 (0xb6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Keystack_Cmd
+Address           : 0x1005a380
+Relative Address  : 0x0005a380
+Ordinal           : 183 (0xb7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl LCS(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003ca50
+Relative Address  : 0x0003ca50
+Ordinal           : 184 (0xb8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : LastArgument
+Address           : 0x1007f430
+Relative Address  : 0x0007f430
+Ordinal           : 185 (0xb9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl ListSaveFile(void)
+Address           : 0x1004a420
+Relative Address  : 0x0004a420
+Ordinal           : 186 (0xba)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : List_Cmd
+Address           : 0x10047840
+Relative Address  : 0x00047840
+Ordinal           : 187 (0xbb)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : LoadAllPlugins
+Address           : 0x10065760
+Relative Address  : 0x00065760
+Ordinal           : 188 (0xbc)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : LoadMedia_Cmd
+Address           : 0x10076ea0
+Relative Address  : 0x00076ea0
+Ordinal           : 189 (0xbd)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : LoadOnePlugin
+Address           : 0x10065410
+Relative Address  : 0x00065410
+Ordinal           : 190 (0xbe)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl LoadWindowsFunctions(void)
+Address           : 0x10010330
+Relative Address  : 0x00010330
+Ordinal           : 191 (0xbf)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Log_Cmd
+Address           : 0x1007b490
+Relative Address  : 0x0007b490
+Ordinal           : 192 (0xc0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MakeDirectoryName
+Address           : 0x1002db10
+Relative Address  : 0x0002db10
+Ordinal           : 193 (0xc1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MakeFolder
+Address           : 0x1003dfa0
+Relative Address  : 0x0003dfa0
+Ordinal           : 194 (0xc2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MakeFullName
+Address           : 0x1002cb10
+Relative Address  : 0x0002cb10
+Ordinal           : 195 (0xc3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MakeVLFN
+Address           : 0x1002dd60
+Relative Address  : 0x0002dd60
+Ordinal           : 196 (0xc4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MakeWildcardName
+Address           : 0x10081840
+Relative Address  : 0x00081840
+Ordinal           : 197 (0xc5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Md_Cmd
+Address           : 0x10079080
+Relative Address  : 0x00079080
+Ordinal           : 198 (0xc6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Memory_Cmd
+Address           : 0x1005a570
+Relative Address  : 0x0005a570
+Ordinal           : 199 (0xc7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl Mklink_Cmd(wchar_t * __ptr64)
+Address           : 0x1005b2d0
+Relative Address  : 0x0005b2d0
+Ordinal           : 200 (0xc8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Mklnk_Cmd
+Address           : 0x1005af10
+Relative Address  : 0x0005af10
+Ordinal           : 201 (0xc9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : __int64 __cdecl MonthCalDlgProc(struct HWND__ * __ptr64,unsigned int,unsigned __int64,__int64)
+Address           : 0x1007e8c0
+Relative Address  : 0x0007e8c0
+Ordinal           : 202 (0xca)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MouseCursorOff
+Address           : 0x1003fe10
+Relative Address  : 0x0003fe10
+Ordinal           : 203 (0xcb)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MouseCursorOn
+Address           : 0x1003fde0
+Relative Address  : 0x0003fde0
+Ordinal           : 204 (0xcc)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl MoveExecutionPointer(int)
+Address           : 0x10001d20
+Relative Address  : 0x00001d20
+Ordinal           : 205 (0xcd)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Msgbox_Cmd
+Address           : 0x1005b6b0
+Relative Address  : 0x0005b6b0
+Ordinal           : 206 (0xce)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Mv_Cmd
+Address           : 0x10021aa0
+Relative Address  : 0x00021aa0
+Ordinal           : 207 (0xcf)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : MyFindExecutable
+Address           : 0x10014740
+Relative Address  : 0x00014740
+Ordinal           : 208 (0xd0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl NTInternalHelp(wchar_t * __ptr64)
+Address           : 0x1005f820
+Relative Address  : 0x0005f820
+Ordinal           : 209 (0xd1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : NextArgument
+Address           : 0x1007f3f0
+Relative Address  : 0x0007f3f0
+Ordinal           : 210 (0xd2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : NextHistoryEntry
+Address           : 0x10035f00
+Relative Address  : 0x00035f00
+Ordinal           : 211 (0xd3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : NextListEntry
+Address           : 0x10013a10
+Relative Address  : 0x00013a10
+Ordinal           : 212 (0xd4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : NthArgument
+Address           : 0x1007f720
+Relative Address  : 0x0007f720
+Ordinal           : 213 (0xd5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl NthArgumentEx(wchar_t * __ptr64,int,wchar_t * __ptr64,wchar_t * __ptr64 * __ptr64,int)
+Address           : 0x1007fa80
+Relative Address  : 0x0007fa80
+Ordinal           : 214 (0xd6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : OffOn
+Address           : 0x1003c6b0
+Relative Address  : 0x0003c6b0
+Ordinal           : 215 (0xd7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : On_Cmd
+Address           : 0x1008cbb0
+Relative Address  : 0x0008cbb0
+Ordinal           : 216 (0xd8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl OpenBatchFile(void)
+Address           : 0x10002610
+Relative Address  : 0x00002610
+Ordinal           : 217 (0xd9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Option_Cmd
+Address           : 0x1005bf50
+Relative Address  : 0x0005bf50
+Ordinal           : 218 (0xda)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : PDir_Cmd
+Address           : 0x1000aae0
+Relative Address  : 0x0000aae0
+Ordinal           : 219 (0xdb)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ParseColors
+Address           : 0x100043f0
+Relative Address  : 0x000043f0
+Ordinal           : 220 (0xdc)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : PathLength
+Address           : 0x1002d500
+Relative Address  : 0x0002d500
+Ordinal           : 221 (0xdd)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : PathPart
+Address           : 0x1002d320
+Relative Address  : 0x0002d320
+Ordinal           : 222 (0xde)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Path_Cmd
+Address           : 0x10079420
+Relative Address  : 0x00079420
+Ordinal           : 223 (0xdf)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : PauseKeys
+Address           : 0x10040c20
+Relative Address  : 0x00040c20
+Ordinal           : 224 (0xe0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Pause_Cmd
+Address           : 0x1008d2e0
+Relative Address  : 0x0008d2e0
+Ordinal           : 225 (0xe1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl PluginHelp(wchar_t * __ptr64)
+Address           : 0x10066980
+Relative Address  : 0x00066980
+Ordinal           : 226 (0xe2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl PluginUsage(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x10066c10
+Relative Address  : 0x00066c10
+Ordinal           : 227 (0xe3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Plugin_Cmd
+Address           : 0x10066310
+Relative Address  : 0x00066310
+Ordinal           : 228 (0xe4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Popd_Cmd
+Address           : 0x100794e0
+Relative Address  : 0x000794e0
+Ordinal           : 229 (0xe5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : PreviousHistoryEntry
+Address           : 0x10035de0
+Relative Address  : 0x00035de0
+Ordinal           : 230 (0xe6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Printf
+Address           : 0x1003d9d0
+Relative Address  : 0x0003d9d0
+Ordinal           : 231 (0xe7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Priority_Cmd
+Address           : 0x100675f0
+Relative Address  : 0x000675f0
+Ordinal           : 232 (0xe8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl ProcessINI(wchar_t * __ptr64)
+Address           : 0x10038570
+Relative Address  : 0x00038570
+Ordinal           : 233 (0xe9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : PromptAliases
+Address           : 0x10063330
+Relative Address  : 0x00063330
+Ordinal           : 234 (0xea)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Prompt_Cmd
+Address           : 0x10068a20
+Relative Address  : 0x00068a20
+Ordinal           : 235 (0xeb)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Pushd_Cmd
+Address           : 0x10079610
+Relative Address  : 0x00079610
+Ordinal           : 236 (0xec)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QPutc
+Address           : 0x1003dc30
+Relative Address  : 0x0003dc30
+Ordinal           : 237 (0xed)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QPuts
+Address           : 0x1003dbb0
+Relative Address  : 0x0003dbb0
+Ordinal           : 238 (0xee)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Qprintf
+Address           : 0x1003d720
+Relative Address  : 0x0003d720
+Ordinal           : 239 (0xef)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryCodePage
+Address           : 0x1004a980
+Relative Address  : 0x0004a980
+Ordinal           : 240 (0xf0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl QueryCountryInfo(void)
+Address           : 0x1004a720
+Relative Address  : 0x0004a720
+Ordinal           : 241 (0xf1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryCurrentDate
+Address           : 0x1007e510
+Relative Address  : 0x0007e510
+Ordinal           : 242 (0xf2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryCurrentDirectory
+Address           : 0x100302d0
+Relative Address  : 0x000302d0
+Ordinal           : 243 (0xf3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryCurrentDrive
+Address           : 0x10080720
+Relative Address  : 0x00080720
+Ordinal           : 244 (0xf4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryCurrentTime
+Address           : 0x1007e6a0
+Relative Address  : 0x0007e6a0
+Ordinal           : 245 (0xf5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryDirectoryTree(wchar_t * __ptr64,int)
+Address           : 0x10033820
+Relative Address  : 0x00033820
+Ordinal           : 246 (0xf6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryDiskInfo(wchar_t * __ptr64,struct QDISKINFO * __ptr64,int)
+Address           : 0x10080d70
+Relative Address  : 0x00080d70
+Ordinal           : 247 (0xf7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryDiskLabel
+Address           : 0x100805d0
+Relative Address  : 0x000805d0
+Ordinal           : 248 (0xf8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryDriveExists
+Address           : 0x10080880
+Relative Address  : 0x00080880
+Ordinal           : 249 (0xf9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryDriveReady
+Address           : 0x10080a70
+Relative Address  : 0x00080a70
+Ordinal           : 250 (0xfa)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryDriveRemote
+Address           : 0x10080a30
+Relative Address  : 0x00080a30
+Ordinal           : 251 (0xfb)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryDriveRemovable
+Address           : 0x100809f0
+Relative Address  : 0x000809f0
+Ordinal           : 252 (0xfc)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryEnvironmentVariable(wchar_t * __ptr64)
+Address           : 0x100132f0
+Relative Address  : 0x000132f0
+Ordinal           : 253 (0xfd)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryFileOwner
+Address           : 0x1002fde0
+Relative Address  : 0x0002fde0
+Ordinal           : 254 (0xfe)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryFileSize
+Address           : 0x1002f560
+Relative Address  : 0x0002f560
+Ordinal           : 255 (0xff)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryFileStreams
+Address           : 0x10031440
+Relative Address  : 0x00031440
+Ordinal           : 256 (0x100)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIFSType
+Address           : 0x10081160
+Relative Address  : 0x00081160
+Ordinal           : 257 (0x101)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryInputChar
+Address           : 0x1003d4a0
+Relative Address  : 0x0003d4a0
+Ordinal           : 258 (0x102)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryInternalCommandFlags(wchar_t * __ptr64)
+Address           : 0x1003a5a0
+Relative Address  : 0x0003a5a0
+Ordinal           : 259 (0x103)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsANSI
+Address           : 0x100051b0
+Relative Address  : 0x000051b0
+Ordinal           : 260 (0x104)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsAdministrator
+Address           : 0x10057950
+Relative Address  : 0x00057950
+Ordinal           : 261 (0x105)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsCDROM
+Address           : 0x10080840
+Relative Address  : 0x00080840
+Ordinal           : 262 (0x106)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsCON
+Address           : 0x1002c5c0
+Relative Address  : 0x0002c5c0
+Ordinal           : 263 (0x107)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsConsole
+Address           : 0x10004670
+Relative Address  : 0x00004670
+Ordinal           : 264 (0x108)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsDelimiter
+Address           : 0x1003c1b0
+Relative Address  : 0x0003c1b0
+Ordinal           : 265 (0x109)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsDevice
+Address           : 0x1002fb80
+Relative Address  : 0x0002fb80
+Ordinal           : 266 (0x10a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsDirectory
+Address           : 0x100309e0
+Relative Address  : 0x000309e0
+Ordinal           : 267 (0x10b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsFile
+Address           : 0x10030440
+Relative Address  : 0x00030440
+Ordinal           : 268 (0x10c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsFileOrDirectory
+Address           : 0x100304e0
+Relative Address  : 0x000304e0
+Ordinal           : 269 (0x10d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryIsFileUTF8(void * __ptr64)
+Address           : 0x1002f790
+Relative Address  : 0x0002f790
+Ordinal           : 270 (0x10e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsFileUnicode
+Address           : 0x1002f680
+Relative Address  : 0x0002f680
+Ordinal           : 271 (0x10f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsGUI
+Address           : 0x1002f790
+Relative Address  : 0x0002f790
+Ordinal           : 272 (0x110)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsJunction
+Address           : 0x100311e0
+Relative Address  : 0x000311e0
+Ordinal           : 273 (0x111)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsLFN
+Address           : 0x1002d810
+Relative Address  : 0x0002d810
+Ordinal           : 274 (0x112)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsNetworkDrive
+Address           : 0x100807b0
+Relative Address  : 0x000807b0
+Ordinal           : 275 (0x113)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsNumeric
+Address           : 0x10061e30
+Relative Address  : 0x00061e30
+Ordinal           : 276 (0x114)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryIsPipeHandle(void * __ptr64)
+Address           : 0x1006adf0
+Relative Address  : 0x0006adf0
+Ordinal           : 277 (0x115)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsPluginCommand
+Address           : 0x100667c0
+Relative Address  : 0x000667c0
+Ordinal           : 278 (0x116)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsPluginFeature
+Address           : 0x100668c0
+Relative Address  : 0x000668c0
+Ordinal           : 279 (0x117)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryIsStreamUTF8(struct _iobuf * __ptr64)
+Address           : 0x1002f790
+Relative Address  : 0x0002f790
+Ordinal           : 280 (0x118)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsStreamUnicode
+Address           : 0x1002f7a0
+Relative Address  : 0x0002f7a0
+Ordinal           : 281 (0x119)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryIsSymbolicLink(wchar_t * __ptr64,int)
+Address           : 0x10031210
+Relative Address  : 0x00031210
+Ordinal           : 282 (0x11a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsTCMD
+Address           : 0x10067a20
+Relative Address  : 0x00067a20
+Ordinal           : 283 (0x11b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsTTY
+Address           : 0x1002fdc0
+Relative Address  : 0x0002fdc0
+Ordinal           : 284 (0x11c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsURL
+Address           : 0x1003a610
+Relative Address  : 0x0003a610
+Ordinal           : 285 (0x11d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsVMWare
+Address           : 0x100a7910
+Relative Address  : 0x000a7910
+Ordinal           : 286 (0x11e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsVirtualPC
+Address           : 0x100a7900
+Relative Address  : 0x000a7900
+Ordinal           : 287 (0x11f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryIsWhiteSpace
+Address           : 0x1003c190
+Relative Address  : 0x0003c190
+Ordinal           : 288 (0x120)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryKeyWaiting
+Address           : 0x1003ef70
+Relative Address  : 0x0003ef70
+Ordinal           : 289 (0x121)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryMemSize
+Address           : 0x10057640
+Relative Address  : 0x00057640
+Ordinal           : 290 (0x122)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryMouseClickWaiting
+Address           : 0x1003ee30
+Relative Address  : 0x0003ee30
+Ordinal           : 291 (0x123)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : unsigned char __cdecl QueryNTFSInfo(int,struct QDISKINFO * __ptr64)
+Address           : 0x10080c60
+Relative Address  : 0x00080c60
+Ordinal           : 292 (0x124)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl QueryOSVersion(struct _OSVERSIONINFOEXW * __ptr64)
+Address           : 0x100577f0
+Relative Address  : 0x000577f0
+Ordinal           : 293 (0x125)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryOptionValue
+Address           : 0x100396b0
+Relative Address  : 0x000396b0
+Ordinal           : 294 (0x126)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryPIDCommandLine(int,wchar_t * __ptr64)
+Address           : 0x100688d0
+Relative Address  : 0x000688d0
+Ordinal           : 295 (0x127)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : struct HWND__ * __ptr64 __cdecl QueryParentWindow(void)
+Address           : 0x10067a70
+Relative Address  : 0x00067a70
+Ordinal           : 296 (0x128)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryPluginInfo
+Address           : 0x10064d20
+Relative Address  : 0x00064d20
+Ordinal           : 297 (0x129)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl QueryPluginPathname(wchar_t * __ptr64)
+Address           : 0x10065140
+Relative Address  : 0x00065140
+Ordinal           : 298 (0x12a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl QueryPluginVersion(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x100649e0
+Relative Address  : 0x000649e0
+Ordinal           : 299 (0x12b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QuerySeekSize
+Address           : 0x1002f530
+Relative Address  : 0x0002f530
+Ordinal           : 300 (0x12c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryTrueName
+Address           : 0x10075c30
+Relative Address  : 0x00075c30
+Ordinal           : 301 (0x12d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl QueryUTCTime(wchar_t * __ptr64,int)
+Address           : 0x1007e7e0
+Relative Address  : 0x0007e7e0
+Ordinal           : 302 (0x12e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryUnicodeOutput
+Address           : 0x1003dc50
+Relative Address  : 0x0003dc50
+Ordinal           : 303 (0x12f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : struct HWND__ * __ptr64 __cdecl QueryViewWindow(void)
+Address           : 0x10067ac0
+Relative Address  : 0x00067ac0
+Ordinal           : 304 (0x130)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : unsigned __int64 __cdecl QueryVirtualMemSize(void * __ptr64)
+Address           : 0x10057450
+Relative Address  : 0x00057450
+Ordinal           : 305 (0x131)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QueryVolumeInfo
+Address           : 0x10081050
+Relative Address  : 0x00081050
+Ordinal           : 306 (0x132)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Querybox_Cmd
+Address           : 0x1005c420
+Relative Address  : 0x0005c420
+Ordinal           : 307 (0x133)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : QuitSendKeys
+Address           : 0x10040c30
+Relative Address  : 0x00040c30
+Ordinal           : 308 (0x134)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Quit_Cmd
+Address           : 0x1008d380
+Relative Address  : 0x0008d380
+Ordinal           : 309 (0x135)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Rd_Cmd
+Address           : 0x10079780
+Relative Address  : 0x00079780
+Ordinal           : 310 (0x136)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ReadCellStr
+Address           : 0x10004ae0
+Relative Address  : 0x00004ae0
+Ordinal           : 311 (0x137)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ReadDescriptions
+Address           : 0x10005e10
+Relative Address  : 0x00005e10
+Ordinal           : 312 (0x138)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ReallocMem
+Address           : 0x10057690
+Relative Address  : 0x00057690
+Ordinal           : 313 (0x139)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Reboot_Cmd
+Address           : 0x1005caf0
+Relative Address  : 0x0005caf0
+Ordinal           : 314 (0x13a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : __int64 __cdecl RecorderDlgProc(struct HWND__ * __ptr64,unsigned int,unsigned __int64,__int64)
+Address           : 0x10006d00
+Relative Address  : 0x00006d00
+Ordinal           : 315 (0x13b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl RegexReplace(wchar_t * __ptr64,wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1002c750
+Relative Address  : 0x0002c750
+Ordinal           : 316 (0x13c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : long __cdecl RegisterApplicationRestartStub(wchar_t const * __ptr64,unsigned long)
+Address           : 0x10057720
+Relative Address  : 0x00057720
+Ordinal           : 317 (0x13d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : RegularExpression
+Address           : 0x10062280
+Relative Address  : 0x00062280
+Ordinal           : 318 (0x13e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Remark_Cmd
+Address           : 0x1002f790
+Relative Address  : 0x0002f790
+Ordinal           : 319 (0x13f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Ren_Cmd
+Address           : 0x10026230
+Relative Address  : 0x00026230
+Ordinal           : 320 (0x140)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl ResetEGets(int,int)
+Address           : 0x10073090
+Relative Address  : 0x00073090
+Ordinal           : 321 (0x141)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : ResolveLink
+Address           : 0x10041f80
+Relative Address  : 0x00041f80
+Ordinal           : 322 (0x142)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl RestoreFromTray(void)
+Address           : 0x10057dc0
+Relative Address  : 0x00057dc0
+Ordinal           : 323 (0x143)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl RestoreVDMDirectory(void)
+Address           : 0x100586b0
+Relative Address  : 0x000586b0
+Ordinal           : 324 (0x144)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Ret_Cmd
+Address           : 0x1008d410
+Relative Address  : 0x0008d410
+Ordinal           : 325 (0x145)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : RewindFile
+Address           : 0x1002f510
+Relative Address  : 0x0002f510
+Ordinal           : 326 (0x146)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : RunKeystrokePlugin
+Address           : 0x10065c90
+Relative Address  : 0x00065c90
+Ordinal           : 327 (0x147)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : RunPlugin
+Address           : 0x10065800
+Relative Address  : 0x00065800
+Ordinal           : 328 (0x148)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : RunStartupFiles
+Address           : 0x1002de40
+Relative Address  : 0x0002de40
+Ordinal           : 329 (0x149)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl SaveBatchArguments(wchar_t * __ptr64)
+Address           : 0x10001e70
+Relative Address  : 0x00001e70
+Ordinal           : 330 (0x14a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SaveDirectory
+Address           : 0x10078ee0
+Relative Address  : 0x00078ee0
+Ordinal           : 331 (0x14b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl SaveIniData(void)
+Address           : 0x100387a0
+Relative Address  : 0x000387a0
+Ordinal           : 332 (0x14c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Scr_Cmd
+Address           : 0x1008d4b0
+Relative Address  : 0x0008d4b0
+Ordinal           : 333 (0x14d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Scroll
+Address           : 0x10004980
+Relative Address  : 0x00004980
+Ordinal           : 334 (0x14e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Scrput_Cmd
+Address           : 0x1008d5e0
+Relative Address  : 0x0008d5e0
+Ordinal           : 335 (0x14f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SearchPaths
+Address           : 0x10032e80
+Relative Address  : 0x00032e80
+Ordinal           : 336 (0x150)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SelectFolder
+Address           : 0x1002bcc0
+Relative Address  : 0x0002bcc0
+Ordinal           : 337 (0x151)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Select_Cmd
+Address           : 0x10074b70
+Relative Address  : 0x00074b70
+Ordinal           : 338 (0x152)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl SendDialogWindow(struct HWND__ * __ptr64)
+Address           : 0x10006cc0
+Relative Address  : 0x00006cc0
+Ordinal           : 339 (0x153)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SendKeys
+Address           : 0x10040bc0
+Relative Address  : 0x00040bc0
+Ordinal           : 340 (0x154)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetAbsCursorPosition
+Address           : 0x10004960
+Relative Address  : 0x00004960
+Ordinal           : 341 (0x155)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetCodePage
+Address           : 0x1004a990
+Relative Address  : 0x0004a990
+Ordinal           : 342 (0x156)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetColors
+Address           : 0x100043d0
+Relative Address  : 0x000043d0
+Ordinal           : 343 (0x157)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetCursorPosition
+Address           : 0x10004920
+Relative Address  : 0x00004920
+Ordinal           : 344 (0x158)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetCursorSize
+Address           : 0x10005120
+Relative Address  : 0x00005120
+Ordinal           : 345 (0x159)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl SetDriveString(wchar_t * __ptr64)
+Address           : 0x10080ae0
+Relative Address  : 0x00080ae0
+Ordinal           : 346 (0x15a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetEVariable
+Address           : 0x100134a0
+Relative Address  : 0x000134a0
+Ordinal           : 347 (0x15b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetError_Cmd
+Address           : 0x1008d5f0
+Relative Address  : 0x0008d5f0
+Ordinal           : 348 (0x15c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetINIDirective
+Address           : 0x10039810
+Relative Address  : 0x00039810
+Ordinal           : 349 (0x15d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl SetInternalCommandFlags(wchar_t * __ptr64,int)
+Address           : 0x1003a5d0
+Relative Address  : 0x0003a5d0
+Ordinal           : 350 (0x15e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetLineColor
+Address           : 0x10005010
+Relative Address  : 0x00005010
+Ordinal           : 351 (0x15f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetMousePosition
+Address           : 0x1003fe70
+Relative Address  : 0x0003fe70
+Ordinal           : 352 (0x160)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl SetMousePositionFromTCMD(int,int)
+Address           : 0x1003fe60
+Relative Address  : 0x0003fe60
+Ordinal           : 353 (0x161)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl SetOSVersion(void)
+Address           : 0x10010070
+Relative Address  : 0x00010070
+Ordinal           : 354 (0x162)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetSessionTitle
+Address           : 0x10057b30
+Relative Address  : 0x00057b30
+Ordinal           : 355 (0x163)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SetTransparency
+Address           : 0x10057b50
+Relative Address  : 0x00057b50
+Ordinal           : 356 (0x164)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Set_Cmd
+Address           : 0x10010f50
+Relative Address  : 0x00010f50
+Ordinal           : 357 (0x165)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Setdos_Cmd
+Address           : 0x1007bad0
+Relative Address  : 0x0007bad0
+Ordinal           : 358 (0x166)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Setlocal_Cmd
+Address           : 0x1008d630
+Relative Address  : 0x0008d630
+Ordinal           : 359 (0x167)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Shift_Cmd
+Address           : 0x1008da80
+Relative Address  : 0x0008da80
+Ordinal           : 360 (0x168)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl ShowPrompt(wchar_t * __ptr64)
+Address           : 0x10068b30
+Relative Address  : 0x00068b30
+Ordinal           : 361 (0x169)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Shralias_Cmd
+Address           : 0x1005ceb0
+Relative Address  : 0x0005ceb0
+Ordinal           : 362 (0x16a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl ShutdownCommandProcessor(void)
+Address           : 0x1007a470
+Relative Address  : 0x0007a470
+Ordinal           : 363 (0x16b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl Similar(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003c8e0
+Relative Address  : 0x0003c8e0
+Ordinal           : 364 (0x16c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl SkipWhiteSpace(wchar_t * __ptr64)
+Address           : 0x1003c1d0
+Relative Address  : 0x0003c1d0
+Ordinal           : 365 (0x16d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Sprintf
+Address           : 0x1003c140
+Relative Address  : 0x0003c140
+Ordinal           : 366 (0x16e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Sscanf
+Address           : 0x1003c110
+Relative Address  : 0x0003c110
+Ordinal           : 367 (0x16f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Start_Cmd
+Address           : 0x1005d390
+Relative Address  : 0x0005d390
+Ordinal           : 368 (0x170)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : StripEnclosingQuotes
+Address           : 0x1003c7c0
+Relative Address  : 0x0003c7c0
+Ordinal           : 369 (0x171)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl StripLeadingCharacters(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003c2a0
+Relative Address  : 0x0003c2a0
+Ordinal           : 370 (0x172)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl StripQuotes(wchar_t * __ptr64)
+Address           : 0x1003c730
+Relative Address  : 0x0003c730
+Ordinal           : 371 (0x173)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl StripTrailingCharacters(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003c440
+Relative Address  : 0x0003c440
+Ordinal           : 372 (0x174)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Switch_Cmd
+Address           : 0x1008dca0
+Relative Address  : 0x0008dca0
+Ordinal           : 373 (0x175)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SysBeep
+Address           : 0x1007f1c0
+Relative Address  : 0x0007f1c0
+Ordinal           : 374 (0x176)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : SysWait
+Address           : 0x1007ece0
+Relative Address  : 0x0007ece0
+Ordinal           : 375 (0x177)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : TCFilter_Cmd
+Address           : 0x100771b0
+Relative Address  : 0x000771b0
+Ordinal           : 376 (0x178)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : TCToolbar_Cmd
+Address           : 0x100803a0
+Relative Address  : 0x000803a0
+Ordinal           : 377 (0x179)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl TabComplete(wchar_t * __ptr64,wchar_t * __ptr64,int)
+Address           : 0x100727d0
+Relative Address  : 0x000727d0
+Ordinal           : 378 (0x17a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl TakeCommandIPC(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003a9f0
+Relative Address  : 0x0003a9f0
+Ordinal           : 379 (0x17b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Tee_Cmd
+Address           : 0x1002aac0
+Relative Address  : 0x0002aac0
+Ordinal           : 380 (0x17c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl TestCondition(wchar_t * __ptr64,int)
+Address           : 0x1008dfd0
+Relative Address  : 0x0008dfd0
+Ordinal           : 381 (0x17d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Time_Cmd
+Address           : 0x1007d4f0
+Relative Address  : 0x0007d4f0
+Ordinal           : 382 (0x17e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Timer_Cmd
+Address           : 0x1007d820
+Relative Address  : 0x0007d820
+Ordinal           : 383 (0x17f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Title_Cmd
+Address           : 0x1005ed00
+Relative Address  : 0x0005ed00
+Ordinal           : 384 (0x180)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Touch_Cmd
+Address           : 0x10027f40
+Relative Address  : 0x00027f40
+Ordinal           : 385 (0x181)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Tree_Cmd
+Address           : 0x10008d60
+Relative Address  : 0x00008d60
+Ordinal           : 386 (0x182)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl TrimCharacters(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003c4a0
+Relative Address  : 0x0003c4a0
+Ordinal           : 387 (0x183)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Truename_Cmd
+Address           : 0x1005ee30
+Relative Address  : 0x0005ee30
+Ordinal           : 388 (0x184)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Type_Cmd
+Address           : 0x10028d30
+Relative Address  : 0x00028d30
+Ordinal           : 389 (0x185)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl URLDecode(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003cd50
+Relative Address  : 0x0003cd50
+Ordinal           : 390 (0x186)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl URLEncode(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1003cc80
+Relative Address  : 0x0003cc80
+Ordinal           : 391 (0x187)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl UTF8ToUnicode(char * __ptr64,wchar_t * __ptr64,int)
+Address           : 0x1003c620
+Relative Address  : 0x0003c620
+Ordinal           : 392 (0x188)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Unalias_Cmd
+Address           : 0x10010f90
+Relative Address  : 0x00010f90
+Ordinal           : 393 (0x189)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : UnicodeToASCII
+Address           : 0x1003c650
+Relative Address  : 0x0003c650
+Ordinal           : 394 (0x18a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl UnicodeToUTF8(wchar_t * __ptr64,char * __ptr64,int)
+Address           : 0x1003c5e0
+Relative Address  : 0x0003c5e0
+Ordinal           : 395 (0x18b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : UniqueFileName
+Address           : 0x1002dcd0
+Relative Address  : 0x0002dcd0
+Ordinal           : 396 (0x18c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : UnloadAllPlugins
+Address           : 0x10065f60
+Relative Address  : 0x00065f60
+Ordinal           : 397 (0x18d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : UnloadOnePlugin
+Address           : 0x10066120
+Relative Address  : 0x00066120
+Ordinal           : 398 (0x18e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : long __cdecl UnregisterApplicationRestartStub(void)
+Address           : 0x10057780
+Relative Address  : 0x00057780
+Ordinal           : 399 (0x18f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Unset_Cmd
+Address           : 0x10010fe0
+Relative Address  : 0x00010fe0
+Ordinal           : 400 (0x190)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl UpdateEnvironment(void)
+Address           : 0x10011020
+Relative Address  : 0x00011020
+Ordinal           : 401 (0x191)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : UpdateTitleAndIcon
+Address           : 0x10057e70
+Relative Address  : 0x00057e70
+Ordinal           : 402 (0x192)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl UpdaterOptions(struct HWND__ * __ptr64)
+Address           : 0x100805b0
+Relative Address  : 0x000805b0
+Ordinal           : 403 (0x193)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl UsageStr(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1005fb20
+Relative Address  : 0x0005fb20
+Ordinal           : 404 (0x194)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl VBeep_Cmd(wchar_t * __ptr64)
+Address           : 0x1008ebb0
+Relative Address  : 0x0008ebb0
+Ordinal           : 405 (0x195)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : VScrput_Cmd
+Address           : 0x1008eee0
+Relative Address  : 0x0008eee0
+Ordinal           : 406 (0x196)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Ver_Cmd
+Address           : 0x1005f4e0
+Relative Address  : 0x0005f4e0
+Ordinal           : 407 (0x197)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Verify_Cmd
+Address           : 0x1007c1f0
+Relative Address  : 0x0007c1f0
+Ordinal           : 408 (0x198)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl View_Cmd(wchar_t * __ptr64)
+Address           : 0x1002b070
+Relative Address  : 0x0002b070
+Ordinal           : 409 (0x199)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void * __ptr64 __cdecl VirtualAllocMem(unsigned int * __ptr64)
+Address           : 0x100574a0
+Relative Address  : 0x000574a0
+Ordinal           : 410 (0x19a)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl VirtualFreeMem(void * __ptr64)
+Address           : 0x10057480
+Relative Address  : 0x00057480
+Ordinal           : 411 (0x19b)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void * __ptr64 __cdecl VirtualReallocMem(void * __ptr64,unsigned __int64)
+Address           : 0x100574f0
+Relative Address  : 0x000574f0
+Ordinal           : 412 (0x19c)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Volume_Cmd
+Address           : 0x1007c260
+Relative Address  : 0x0007c260
+Ordinal           : 413 (0x19d)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Which_Cmd
+Address           : 0x1007c4a0
+Relative Address  : 0x0007c4a0
+Ordinal           : 414 (0x19e)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WildcardComparison
+Address           : 0x10081ad0
+Relative Address  : 0x00081ad0
+Ordinal           : 415 (0x19f)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WindowToClipboard
+Address           : 0x10004160
+Relative Address  : 0x00004160
+Ordinal           : 416 (0x1a0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Window_Cmd
+Address           : 0x1005ee90
+Relative Address  : 0x0005ee90
+Ordinal           : 417 (0x1a1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WriteCellStr
+Address           : 0x10004b70
+Relative Address  : 0x00004b70
+Ordinal           : 418 (0x1a2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WriteChrAtt
+Address           : 0x10004c40
+Relative Address  : 0x00004c40
+Ordinal           : 419 (0x1a3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WriteDescriptions
+Address           : 0x100060c0
+Relative Address  : 0x000060c0
+Ordinal           : 420 (0x1a4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WritePrivateProfileInt
+Address           : 0x10057ae0
+Relative Address  : 0x00057ae0
+Ordinal           : 421 (0x1a5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WriteStrAtt
+Address           : 0x10004d20
+Relative Address  : 0x00004d20
+Ordinal           : 422 (0x1a6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WriteTTY
+Address           : 0x10004c00
+Relative Address  : 0x00004c00
+Ordinal           : 423 (0x1a7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : WriteVStrAtt
+Address           : 0x10004ef0
+Relative Address  : 0x00004ef0
+Ordinal           : 424 (0x1a8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl WrongOS(void)
+Address           : 0x100577c0
+Relative Address  : 0x000577c0
+Ordinal           : 425 (0x1a9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : Y_Cmd
+Address           : 0x1002af60
+Relative Address  : 0x0002af60
+Ordinal           : 426 (0x1aa)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : _HashFile
+Address           : 0x10034160
+Relative Address  : 0x00034160
+Ordinal           : 427 (0x1ab)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl __Unset(wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x10012bf0
+Relative Address  : 0x00012bf0
+Ordinal           : 428 (0x1ac)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl _ctoupper(int)
+Address           : 0x1003c530
+Relative Address  : 0x0003c530
+Ordinal           : 429 (0x1ad)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl _is_signed_digit(int)
+Address           : 0x100620f0
+Relative Address  : 0x000620f0
+Ordinal           : 430 (0x1ae)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl _isdigit(wchar_t)
+Address           : 0x10062050
+Relative Address  : 0x00062050
+Ordinal           : 431 (0x1af)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : int __cdecl _isxdigit(wchar_t)
+Address           : 0x10062060
+Relative Address  : 0x00062060
+Ordinal           : 432 (0x1b0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : _stristr
+Address           : 0x1003c2f0
+Relative Address  : 0x0003c2f0
+Ordinal           : 433 (0x1b1)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : struct ANSI_COLORS * aColors
+Address           : 0x100d9b50
+Relative Address  : 0x000d9b50
+Ordinal           : 434 (0x1b2)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : struct GLOBAL_VARIABLES aGlobals
+Address           : 0x100e22e0
+Relative Address  : 0x000e22e0
+Ordinal           : 435 (0x1b3)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : struct INIFILE aIniFile
+Address           : 0x10113170
+Relative Address  : 0x00113170
+Ordinal           : 436 (0x1b4)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : egets
+Address           : 0x1006c890
+Relative Address  : 0x0006c890
+Ordinal           : 437 (0x1b5)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : error
+Address           : 0x10013d00
+Relative Address  : 0x00013d00
+Ordinal           : 438 (0x1b6)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl find_file(int,wchar_t * __ptr64,unsigned long,struct FILESEARCH * __ptr64,wchar_t * __ptr64)
+Address           : 0x10031860
+Relative Address  : 0x00031860
+Ordinal           : 439 (0x1b7)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : honk
+Address           : 0x10014410
+Relative Address  : 0x00014410
+Ordinal           : 440 (0x1b8)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl scan(wchar_t * __ptr64,wchar_t * __ptr64,wchar_t * __ptr64)
+Address           : 0x1007fde0
+Relative Address  : 0x0007fde0
+Ordinal           : 441 (0x1b9)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl strend(wchar_t * __ptr64)
+Address           : 0x1003c3f0
+Relative Address  : 0x0003c3f0
+Ordinal           : 442 (0x1ba)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : strins
+Address           : 0x1003c380
+Relative Address  : 0x0003c380
+Ordinal           : 443 (0x1bb)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : strlast
+Address           : 0x1003c410
+Relative Address  : 0x0003c410
+Ordinal           : 444 (0x1bc)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : tty_yield
+Address           : 0x10067b10
+Relative Address  : 0x00067b10
+Ordinal           : 445 (0x1bd)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wchar_t * __ptr64 __cdecl wPopSelect(struct HWND__ * __ptr64,int * __ptr64,int * __ptr64,int * __ptr64,int * __ptr64,wchar_t * __ptr64 * __ptr64,int,int,wchar_t * __ptr64,wchar_t * __ptr64,wchar_t * __ptr64,int,wchar_t * __ptr64)
+Address           : 0x10083e50
+Relative Address  : 0x00083e50
+Ordinal           : 446 (0x1be)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : void __cdecl wcmemset(wchar_t * __ptr64,wchar_t,int)
+Address           : 0x1003c570
+Relative Address  : 0x0003c570
+Ordinal           : 447 (0x1bf)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
+==================================================
+Function Name     : wwriteXP
+Address           : 0x1003dc60
+Relative Address  : 0x0003dc60
+Ordinal           : 448 (0x1c0)
+Filename          : TakeCmd.dll
+Full Path         : C:\Program Files\JPSoft\TCCLE14x64\TakeCmd.dll
+Type              : Exported Function
+==================================================
+
