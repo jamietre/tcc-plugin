@@ -1,6 +1,6 @@
 ##TccPlugin
 
-C# framework for creating plugins for the [TCC](https://jpsoft.com/tccle-cmd-replacement.html) command line replacement for Windows.
+C# framework for creating plugins for the [TCC](https://jpsoft.com/tccle-cmd-replacement.html) command shell (CMD) replacement for Windows.
 
 ##Status
 
@@ -8,7 +8,7 @@ C# framework for creating plugins for the [TCC](https://jpsoft.com/tccle-cmd-rep
 
 ##How to use
 
-Compile it, and copy the resulting DLL into a `plugins` folder where TCC is compiled. Or, you can load a plugin interactively:
+Compile it, and copy the resulting DLL into a `plugins` folder where TCC is located. Or, you can load a plugin interactively:
 
     > PLUGIN /L MyPlugin.dll
 
@@ -34,7 +34,7 @@ You can create functions that take arguments:
     {
         var reversed = sb.ToString().Reverse().ToArray();
         sb.Clear();
-        sb.Append(reverse);
+        sb.Append(reversed);
         return 0;
     }
 
@@ -95,10 +95,14 @@ I am know almost nothing about working with unmanaged memory from C#. Everything
 
 There is a distinct lack of a basic usable shell for Windows. Mintty under Cygwin can be set up well (e.g. Babun & zsh) but Cygwin doesn't work well for some things - particularly Node.
 
-TCC happens to have good basic human interaction in the form of an editable command line that works with familiar Windows key bindings, which all the other shells lack. It integrates well with Conemu. And it's extensible with a plugin API. This means I can bend it to my will. And TCC/LE is free. This seems like the perfect platform for creating a good Windows command line environment.
+TCC happens to have good basic human interaction in the form of an editable command line that works with familiar Windows key bindings, which all the other shells lack. It integrates well with ConEmu. It does And it's extensible with a plugin API. This means I can bend it to my will. And TCC/LE is free. This seems like the perfect platform for creating a good Windows command line environment.
 
-However, the plugin API isn't particularly well documented, and JPSoft provide only a C++ example. Having no interest in writing all my manhandling code in C++, I put this together. I hope this project will facilitate customizing the shell more easily.
+However, the plugin API isn't particularly well documented, and JPSoft provide only Delphi and C++ examples. Having no interest in writing all my manhandling code in C++, I put this together. I hope this project will facilitate customizing the shell more easily. It seems very powerful -- there doesn't seem much that can't be controlled via the plugin API.
 
 Ultimately I'd like to build something on top of the TCC shell that uses Git for Windows and/or Gow to provide as good a unix-like experience on windows as possible. Be nice to be able to defer to `bash` automatically for shell scripts.
 
-Things to figure out... using the Git tools like `ls` considers your home directory to be `/`. Need some parity when working with unix-like paths and the dos tools in TCC. Perhaps just always defer to the git version, e.g. `alias dir=ls` and so on? What about `cd`? Do I need to rewrite these commands as plugins and map to windows folder..
+Things to figure out... using the Git tools like `ls` considers your home directory to be `/`. Need some parity when working with unix-like paths and the dos tools in TCC. Since we will be working interchangeably with DOS shell and the Git bash when using the Windows Git unix commands, how do we resolve this?
+
+##Official Docs
+
+[Plugin SDK](https://jpsoft.com/all-downloads/plugins-take-command.html) on JPSoft's web site. Other than this I couldn't find anything other code examples online. Luckily most of the public API for TakeCommand is documented in `TakeCmd.h` in the SDK.
