@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using RGiesecke.DllExport;
 using TccPlugin.Parser;
+using TccPlugin.TakeCmd;
 
 namespace TccPlugin
 {
@@ -47,7 +48,7 @@ namespace TccPlugin
             piInfo.pszEmail = "alien@outsharked.com";
             piInfo.pszWWW = "http://outsharked.com";
             piInfo.pszDescription = "Plugin Demo";
-            piInfo.pszFunctions = "_hello,@rev,UNKNOWN_CMD,CD,DIR,*key";
+            piInfo.pszFunctions = "_hello,@rev,CD,DIR,*key";
             piInfo.nMajor = 1;
             piInfo.nMinor = 0;
             piInfo.nBuild = 1;
@@ -62,7 +63,7 @@ namespace TccPlugin
 
             TakeCmdLib.MapPath = MapPath;
 #if DEBUG
-            Console.WriteLine("Initialized");
+            Console.WriteLine("TCC Plugin Initialized");
 #endif
             return 0;
         }

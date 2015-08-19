@@ -20,7 +20,7 @@ namespace TccPlugin.Parser
                 string[] parts = arg.Split(':');
 
                 Switch = parts[0];
-                if (parts.Length > 0)
+                if (parts.Length > 1)
                 {
                     Value = parts[1];
                 }

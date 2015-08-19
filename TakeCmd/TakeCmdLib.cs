@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using TccPlugin.Parser;
 
-namespace TccPlugin
+namespace TccPlugin.TakeCmd
 {
     public unsafe static class TakeCmdLib
     {
