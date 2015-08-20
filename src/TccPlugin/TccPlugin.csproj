@@ -11,6 +11,7 @@
     <AssemblyName>TccPlugin</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>79b1b4a5</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,24 +64,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="IgnoreDllExportAttribute.cs" />
     <Compile Include="Parser\CommandLine.cs" />
     <Compile Include="KeyCodes.cs" />
     <Compile Include="Parser\CommandLineArg.cs" />
     <Compile Include="Parser\CommandLineArgs.cs" />
-    <Compile Include="TakeCmdLib.cs" />
-    <Compile Include="TakeCmd\TakeCmdCommand.cs" />
-    <Compile Include="TakeCmd\TakeCmdCommands.cs" />
-    <Compile Include="TccMethod.cs" />
-    <Compile Include="TccMethodTypes.cs" />
+    <Compile Include="TakeCmd\TccArg.cs" />
+    <Compile Include="TakeCmd\TccException.cs" />
+    <Compile Include="TakeCmd\TccCommandName.cs" />
+    <Compile Include="TakeCmd\TccCommandRepo.cs" />
+    <Compile Include="TakeCmd\TccLib.cs" />
+    <Compile Include="TakeCmd\TccCommand.cs" />
+    <Compile Include="TakeCmd\TccCommands.cs" />
+    <Compile Include="TakeCmd\TccCommandExecutor.cs" />
+    <Compile Include="PluginInfo.cs" />
     <Compile Include="UnmanagedData.cs" />
     <Compile Include="KeyInfo.cs" />
-    <Compile Include="PluginInfo.cs" />
+    <Compile Include="TakeCmd\TccPluginInfo.cs" />
     <Compile Include="TccPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="sdk\TakeCmd.h" />

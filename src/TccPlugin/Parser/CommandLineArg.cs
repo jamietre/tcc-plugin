@@ -8,6 +8,18 @@ namespace TccPlugin.Parser
 {
     public class CommandLineArg
     {
+        public static CommandLineArg Clone(CommandLineArg arg)
+        {
+            var newArg = new CommandLineArg
+            {
+                IsSwitch = arg.IsSwitch,
+                Switch = arg.Switch,
+                Value = arg.Value
+            };
+            return newArg;
+        }
+        public CommandLineArg() { }
+
         public CommandLineArg(string arg)
         {
             if (String.IsNullOrEmpty(arg)) {

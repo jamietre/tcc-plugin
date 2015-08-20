@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using RGiesecke.DllExport;
+using TccPlugin.TakeCmd;
 
 namespace TccPlugin.Parser
 {
@@ -111,7 +112,7 @@ namespace TccPlugin.Parser
 
             var pos = 0;
             bool passedEnd = false;
-            while (pos < TakeCmdLib.BUF_SIZE && pos < Line.Length)
+            while (pos < TccLib.BUF_SIZE && pos < Line.Length)
             {
                 if (buf[pos] == (char)0)
                 {
@@ -124,14 +125,14 @@ namespace TccPlugin.Parser
             // pad if replacing with smaller-lenght string
             if (!passedEnd)
             {
-                while (pos < TakeCmdLib.BUF_SIZE && buf[pos] != (char)0) {
+                while (pos < TccLib.BUF_SIZE && buf[pos] != (char)0) {
                     buf[pos++] = (char)32;
                 }
             }
 
             // move pointer after new text
 
-            Source->pszCurrent = Source->pszLine + Math.Min(TakeCmdLib.BUF_SIZE, CurrentPos) * 2;
+            Source->pszCurrent = Source->pszLine + Math.Min(TccLib.BUF_SIZE, CurrentPos) * 2;
 
             Source->fRedraw = 1;
             Source->nKey = 0;

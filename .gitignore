@@ -1,4 +1,5 @@
-/sdk
-/bin
-/obj
-/packages
+bin/
+sdk/
+src/**/bin/
+src/**/obj/
+src/packages

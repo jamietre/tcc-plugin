@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TccPlugin", "TccPlugin.csproj", "{E6FCB86F-38A8-4591-9D00-A1DFAD31AD4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TccPlugin", "TccPlugin\TccPlugin.csproj", "{E6FCB86F-38A8-4591-9D00-A1DFAD31AD4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TildeSupport", "TildeSupport\TildeSupport.csproj", "{F912E020-0EC1-47B9-8EF3-8BB2951EF06D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{31E26DA0-F1ED-4B7C-BD85-296DCF27B974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,12 @@ Global
 		{E6FCB86F-38A8-4591-9D00-A1DFAD31AD4D}.Release|Any CPU.Build.0 = Release|x64
 		{E6FCB86F-38A8-4591-9D00-A1DFAD31AD4D}.Release|x64.ActiveCfg = Release|x64
 		{E6FCB86F-38A8-4591-9D00-A1DFAD31AD4D}.Release|x64.Build.0 = Release|x64
+		{F912E020-0EC1-47B9-8EF3-8BB2951EF06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F912E020-0EC1-47B9-8EF3-8BB2951EF06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F912E020-0EC1-47B9-8EF3-8BB2951EF06D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F912E020-0EC1-47B9-8EF3-8BB2951EF06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F912E020-0EC1-47B9-8EF3-8BB2951EF06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F912E020-0EC1-47B9-8EF3-8BB2951EF06D}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

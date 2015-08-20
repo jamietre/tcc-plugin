@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TccPlugin.Parser;
 
 namespace TccPlugin.TakeCmd
 {
-    public class TakeCmdCommand
+    public class TccException: Exception
     {
-        public string Name;
+        public TccException(string message) : base(message) { }
     }
 }

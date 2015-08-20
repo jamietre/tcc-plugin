@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TccPlugin
+namespace TccPlugin.TakeCmd
 {
-    public enum TccMethodTypes
+ 
+    public enum TccCommandName
     {
-        InternalVariable = 1,
-        Function = 2,
-        Other = 3
+        CD = 1,
+        CDD = 2, 
+        DIR = 3
+
     }
 }

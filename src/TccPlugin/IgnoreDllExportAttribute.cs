@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TccPlugin.TakeCmd
+namespace TccPlugin
 {
- 
-    public enum TakeCmdCommands
+    class IgnoreDllExportAttribute: Attribute
     {
-        CD = 1,
-        CDD=2, 
-        DIR = 3
-
     }
 }
