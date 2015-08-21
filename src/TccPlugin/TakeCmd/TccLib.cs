@@ -41,7 +41,6 @@ namespace TccPlugin.TakeCmd
 
         #endregion
 
-
         #region private methods
 
         public delegate uint TCAction(char* command);

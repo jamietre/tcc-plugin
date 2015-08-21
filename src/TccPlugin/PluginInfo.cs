@@ -12,27 +12,39 @@ namespace TccPlugin
 {
     public class PluginInfo
     {
-        static PluginInfo()
+        public PluginInfo()
         {
-            var types = Assembly.GetExecutingAssembly().GetTypes();
+            if (!String.IsNullOrEmpty(PluginFunctions))
+            {
+                return;
+            }
+
+            //Console.WriteLine("Assembly:" + Assembly.GetCallingAssembly().GetName().FullName);
+            var types = Assembly.GetCallingAssembly().GetTypes();
+            
 
             // Get all static methods in with [DllExport] froem every assembly, except our pre-configured ones
             var exported = types.SelectMany(type =>
             {
-                return type.GetMethods(BindingFlags.Static)
-                    .Where(method => method.CustomAttributes
-                        .Count(attr => attr.GetType() == typeof(DllExportAttribute)) > 0);
+                return type.GetMethods(BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public)
+                    .Where(method =>
+                    {
+                        return method.CustomAttributes
+                            .Count(attr => attr.AttributeType == typeof(PluginMethodAttribute)) > 0;
+                    });
             });
 
             PluginFunctions = String.Join(",", 
                 exported.Select(method =>
                 {
-                    var name = ((DllExportAttribute)method.GetCustomAttribute(typeof(DllExportAttribute))).ExportName;
+                    var name = method.Name;
                     return name.StartsWith("f_") ? 
                         "@" + name.Substring(2) :
+                        name == "key" ? "*key" :
                         name;
                 })
             );
+
 
         }
 

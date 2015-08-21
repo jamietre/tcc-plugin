@@ -20,7 +20,7 @@ namespace TccPlugin
             int pos = 0;
             while (pos < chars.Length && chars[pos] != '\0')
             {
-                sb.Append(chars[pos]);
+                sb.Append(chars[pos++]);
             }
             return sb.ToString();
         }

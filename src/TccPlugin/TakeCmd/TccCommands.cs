@@ -7,27 +7,13 @@ using System.Threading.Tasks;
 namespace TccPlugin.TakeCmd
 {
  
+    /// <summary>
+    /// 
+    /// </summary>
     public unsafe class TccCommands
     {
         private TccCommandExecutor CmdExecutor = new TccCommandExecutor();
         
-        /// <summary>
-        /// Expand all variables, aliases and functions in a string
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        public string ExpandVariables(string text)
-        {
-            char[] chars = new char[TccLib.BUF_SIZE];
-            text.CopyTo(0, chars,0,text.Length);
-
-            fixed (char* textPtr = chars)
-            {
-                TccLib.TC_ExpandVariables(textPtr, 0);
-
-                return chars.ToStringSafe();
-            }
-        }
         /// <summary>
         /// Execute a command on the Tcc API
         /// </summary>

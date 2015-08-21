@@ -31,6 +31,7 @@ namespace TccPlugin
             hModule = _hModule;
 
             pszFunctions = pluginInfo.Functions;
+            
         }
 
         [MarshalAs(UnmanagedType.LPTStr)]
@@ -56,6 +57,7 @@ namespace TccPlugin
         public int nBuild;					// plugin's build #
 
         public IntPtr hModule;			// module handle
+        
         [MarshalAs(UnmanagedType.LPTStr)]
         public string pszModule;			// module name
     }

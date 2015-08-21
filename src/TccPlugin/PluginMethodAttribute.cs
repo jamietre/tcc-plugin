@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace TccPlugin
 {
-    class KeyCodes
+    public class PluginMethodAttribute: Attribute
     {
-
     }
 }
