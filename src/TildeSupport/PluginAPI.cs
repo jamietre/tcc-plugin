@@ -29,13 +29,16 @@ namespace TildeSupport
             Tcc = new TccCommands();
             Tcc.MapPath = Helpers.MapPath;
 
+            Loader = new ExternalLoader(Tcc);
         }
 
         private static TccCommands Tcc;
+        private static ExternalLoader Loader;
 
+        #region TCC API
 
         [DllExport]
-        private static int InitializePlugin()
+        private static uint InitializePlugin()
         {
             return TccEventManager.InitializePlugin();
         }
@@ -47,19 +50,19 @@ namespace TildeSupport
         }
 
         [DllExport]
-        private static int ShutdownPlugin(int bEndProcess)
+        private static uint ShutdownPlugin(int bEndProcess)
         {
             return TccEventManager.ShutdownPlugin(bEndProcess);
         }
 
         [PluginMethod, DllExport]
-        private static int key(IntPtr keyInfoPtr)
+        private static uint key(IntPtr keyInfoPtr)
         {
             return TccEventManager.Key(keyInfoPtr);
         }
 
         [PluginMethod, DllExport]
-        public static int UNKNOWN_CMD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        public static uint UNKNOWN_CMD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             return TccEventManager.UnknownCommand(sb);
         }
@@ -83,9 +86,23 @@ namespace TildeSupport
             return Helpers.MapCommands(sb);
         }
 
-            
+        [PluginMethod, DllExport]
+        public unsafe static uint EDIT([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            var loader = new ExternalLoader(Tcc);
+            loader.Load("edit", sb.ToStringTrimmed());
+            return 0;
+        }
 
+        [PluginMethod, DllExport]
+        public unsafe static uint EXPLORE([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            var loader = new ExternalLoader(Tcc);
+            loader.Explorer(sb.ToStringTrimmed());
+            return 0;
+        }
 
-      
+        #endregion
+
     }
 }

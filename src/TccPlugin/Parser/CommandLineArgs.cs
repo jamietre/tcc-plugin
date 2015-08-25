@@ -52,6 +52,10 @@ namespace TccPlugin.Parser
 
                 Args = new List<CommandLineArg>(parts.Select(item=>new CommandLineArg(item)));
             }
+            else
+            {
+                Args = new List<CommandLineArg>();
+            }
         }
 
         private List<CommandLineArg> Args;

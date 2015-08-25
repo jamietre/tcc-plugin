@@ -39,12 +39,15 @@ namespace TccPlugin.TakeCmd
         [DllImport("TakeCmd.dll", EntryPoint="ExpandVariables")]
         internal static extern uint TC_ExpandVariables(char* text, int recurse);
 
+        [DllImport("TakeCmd.dll", EntryPoint="Command")]
+        internal static extern uint TC_Command(char* text, int reserved);
+
         #endregion
 
         #region private methods
 
         public delegate uint TCAction(char* command);
-
+        public delegate uint TCAction2(char* command, int parm);
         
         #endregion
     }

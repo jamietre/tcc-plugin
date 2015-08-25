@@ -25,12 +25,16 @@ namespace TildeSupport
         {
             if (path.StartsWith("~"))
             {
-                path = TccMethods.ExpandVariables("%HOMEDRIVE%%HOMEPATH%") + path.Substring(1);
+                path = TccCommands.ExpandVariables("%HOMEDRIVE%%HOMEPATH%") + path.Substring(1);
             }
-            path = path.Replace("/", "\\");
+            path = FixSlashes(path);
 
             return path;
+        }
 
+        public static string FixSlashes(string path)
+        {
+            return path.Replace("/", "\\");
         }
     }
 }

@@ -32,6 +32,25 @@ namespace TccPlugin.TakeCmd
 
             return result;
         }
+        /// <summary>
+        /// TODO Do I really need a separate signature for each variation? How to encapsulate with unsafe code? Func<char*> no work
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="action"></param>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public uint Execute(TccLib.TCAction2 action, string text, int parm)
+        {
+            var args = ParseArgs(text);
+
+            uint result;
+            fixed (char* textPtr = args.ToString())
+            {
+                result = action(textPtr, parm);
+            }
+
+            return result;
+        }
 
         public CommandLineArgs ParseArgs(StringBuilder sb)
         {

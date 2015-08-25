@@ -32,6 +32,11 @@ namespace TccPlugin
             return sb;
         }
 
+        public static string ToStringTrimmed(this StringBuilder sb)
+        {
+            return sb.ToString().Trim();
+        }
+
         
     }
 }

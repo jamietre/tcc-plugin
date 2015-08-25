@@ -84,7 +84,6 @@
     <Compile Include="TakeCmd\TccCommands.cs" />
     <Compile Include="TakeCmd\TccCommandExecutor.cs" />
     <Compile Include="PluginInfo.cs" />
-    <Compile Include="TakeCmd\TccMethods.cs" />
     <Compile Include="TccPluginTemplate.cs" />
     <Compile Include="UnmanagedData.cs" />
     <Compile Include="KeyInfo.cs" />

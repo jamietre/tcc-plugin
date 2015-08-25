@@ -21,11 +21,16 @@ namespace TccPlugin
 
         private static UnmanagedData<TccPluginInfo> pluginInfo;
 
-        public static int ShutdownPlugin(int bEndProcess)
+        public static uint ShutdownPlugin(int bEndProcess)
         {
 #if DEBUG
             Console.WriteLine("Shutting down " + pluginInfo.Source.pszDll);
 #endif
+            if (OnShutdown!= null)
+            {
+                OnShutdown();
+            }
+
             pluginInfo.Dispose();
 
             return 0;
@@ -39,18 +44,23 @@ namespace TccPlugin
             pluginInfo = new UnmanagedData<TccPluginInfo>(piInfo);
             return pluginInfo.Pointer;
         }
-        public static int InitializePlugin()
+
+        public static uint InitializePlugin()
         {
 
 #if DEBUG
             Console.WriteLine("TCC Plugin Initialized");
 #endif
+            if (OnInitialize != null)
+            {
+                OnInitialize();
+            }
             return 0;
         }
 
-        public static int UnknownCommand(StringBuilder sb)
+        public static uint UnknownCommand(StringBuilder sb)
         {
-            return 0;
+            return TccLib.RETURN_DEFER;
         }
 
 
@@ -77,12 +87,18 @@ namespace TccPlugin
         public delegate void KeypressEventHandler(CommandLine commandLine);
         public static event KeypressEventHandler OnKeyPress;
 
+        public delegate void PluginStateEventHandler();
+
+        public static event PluginStateEventHandler OnInitialize;
+        public static event PluginStateEventHandler OnShutdown;
+
+
         /// <summary>
         /// TODO: What is return value for?
         /// </summary>
         /// <param name="keyInfoPtr"></param>
         /// <returns></returns>
-        public unsafe static int Key(IntPtr keyInfoPtr)
+        public unsafe static uint Key(IntPtr keyInfoPtr)
         {
             if (OnKeyPress != null)
             {
