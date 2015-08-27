@@ -32,7 +32,7 @@ namespace TildeSupport
             Loader = new ExternalLoader(Tcc);
         }
 
-        private static Configuration Config;
+        //private static Configuration Config;
         private static TccCommands Tcc;
         private static ExternalLoader Loader;
 
