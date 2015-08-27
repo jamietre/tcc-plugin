@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TccPlugin.Parser;
 
 namespace TccPlugin.TakeCmd
 {
@@ -13,17 +14,96 @@ namespace TccPlugin.TakeCmd
     public unsafe class TccCommands
     {
         private TccCommandExecutor CmdExecutor = new TccCommandExecutor();
+
+        /// <summary>
+        /// Process and rewrite a command line with path mapping, etc
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="commandArgs"></param>
+        /// <returns></returns>
+        public uint ProcessCmd(TccCommandName name, StringBuilder commandArgs)
+        {
+            return ProcessCmd(name, commandArgs, null);
+        }
+
+        /// <summary>
+        /// Process and rewrite a command line with path mapping, etc, but call back with commandLineArgs object 
+        /// for further modification
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="commandArgs"></param>
+        /// <param name="commandLineArgs"></param>
+        /// <returns></returns>
+        public uint ProcessCmd(TccCommandName name, StringBuilder commandArgs, Action<CommandLineArgs> commandLine)
+        {
+            try
+            {
+                var cmd = TccCommandRepo.Get(name);
+                var commandLineArgs = ParseArgs(cmd, commandArgs.ToString());
+                if (commandLine != null)
+                {
+                    commandLine(commandLineArgs);
+                }
+
+                commandArgs.Replace(" " + commandLineArgs.ToString());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return 1;
+            }
+
+            return TccLib.RETURN_DEFER;
+        }
+        
         
         /// <summary>
-        /// Execute a command on the Tcc API
+        /// Execute a command on the Tcc API.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="commandText"></param>
         /// <returns></returns>
-        public uint ExecuteCmd(TccCommandName name, string commandText)
+        public uint ExecuteCmd(TccCommandName name, string commandArgs)
         {
-            var cmd = TccCommandRepo.Get(name);
-            return CmdExecutor.Execute(cmd.WinApiCmd, commandText);
+            TccCommand cmd;
+            try
+            {
+                cmd = TccCommandRepo.Get(name);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return 1;
+            }
+
+            return ExecuteCmd(cmd, ParseArgs(cmd, commandArgs));
+        }
+
+
+        /// <summary>
+        /// Execute a command on the Tcc API. If the command line arguments include /?, it will be deferred
+        /// to the generic command line executor, as this seems to be pre-processed by TCC natively.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="commandText"></param>
+        /// <returns></returns>
+        public uint ExecuteCmd(TccCommand command, CommandLineArgs commandLineArgs)
+        {
+            try
+            {
+                if (commandLineArgs.Any(item => item.IsFlag && item.Option == "?"))
+                {
+                    return Command(command.Name + " " + commandLineArgs.ToString());
+                }
+
+
+                return CmdExecutor.Execute(command.WinApiCmd, commandLineArgs.ToString());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return 1;
+            }
         }
 
         /// <summary>
@@ -78,14 +158,48 @@ namespace TccPlugin.TakeCmd
         /// <returns></returns>
         public Func<string, string> MapPath
         {
-            get
+            get; set;
+        }
+
+        /// <summary>
+        /// Transform a command line string into CommandLineArgs, applying MapPath
+        /// </summary>
+        /// <param name="commandLine"></param>
+        /// <returns></returns>
+        public CommandLineArgs ParseArgs(TccCommand tccCommand, string commandLine)
+        {
+            var cmd = new CommandLineArgs(commandLine);
+
+            if (MapPath != null)
             {
-                return CmdExecutor.MapPath;
+                foreach (var arg in cmd)
+                {
+                    ParseArg(tccCommand, arg);
+                    
+                }
             }
-            set
-            {
-                CmdExecutor.MapPath = value;
+
+            return cmd;
+        }
+
+        private void ParseArg(TccCommand command, CommandLineArg argument)
+        {
+            // only parse things which we are sure aren't options; either by 
+            // nature of it not having a slash, or if it starts with a slash,
+            // then by see if it matches a drive letter. Note that this could conflict
+            // with options
+
+            if (!command.IsOptionsDefined) {
+                return;
             }
+
+            if (argument.IsOption && command.HasOption(argument.Option, argument.IsFlag)) {
+                return;
+            }
+
+            argument.Value = MapPath(argument.ToString());
+            argument.IsOption=false;
+
         }
     }
 }

@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace TccPlugin.Parser
 {
+    /// <summary>
+    /// A command line argument
+    /// </summary>
     public class CommandLineArg
     {
         public static CommandLineArg Clone(CommandLineArg arg)
         {
             var newArg = new CommandLineArg
             {
-                IsSwitch = arg.IsSwitch,
-                Switch = arg.Switch,
+                IsOption = arg.IsOption,
+                Option = arg.Option,
                 Value = arg.Value
             };
             return newArg;
         }
-        public CommandLineArg() { }
+        private CommandLineArg() { }
 
         public CommandLineArg(string arg)
         {
@@ -26,12 +29,15 @@ namespace TccPlugin.Parser
                 throw new ArgumentException("Can't create a null argument");
             }
 
-            if (arg[0] == '/')
-            {
-                IsSwitch = true;
-                string[] parts = arg.Split(':');
+            // Any argument must be non-null; if value is null it always means that it was unassigned
+            // as a result of a value-less option and we treat it as a flag
 
-                Switch = parts[0];
+            if (arg[0] == '/' && arg.Length > 1)
+            {
+                IsOption = true;
+                string[] parts = arg.Substring(1).Split(':');
+
+                Option = parts[0].ToUpperInvariant();
                 if (parts.Length > 1)
                 {
                     Value = parts[1];
@@ -42,14 +48,32 @@ namespace TccPlugin.Parser
                 Value = arg;
             }
         }
+
+        public static implicit operator CommandLineArg(string arg)
+        {
+            return new CommandLineArg(arg);
+        }
+
         /// <summary>
         /// When true, this is a switch type argument
         /// </summary>
-        public bool IsSwitch { get; set; }
+        public bool IsOption { get; set; }
+
+        /// <summary>
+        /// When true, the option was called as a flag (e.g. with no value)
+        /// </summary>
+
+        public bool IsFlag
+        {
+            get
+            {
+                return Value == null;
+            }
+        }
         /// <summary>
         /// When this is a flag, contains the name of the switch
         /// </summary>
-        public string Switch { get; set; }
+        public string Option { get; set; }
         /// <summary>
         /// The argument or switch value
         /// </summary>
@@ -58,8 +82,8 @@ namespace TccPlugin.Parser
         public override string ToString()
         {
             return String.Format("{0}{1}{2}",
-                IsSwitch ? "/" + Switch : "",
-                !String.IsNullOrEmpty(Value) && IsSwitch ? ":" : "",
+                IsOption ? "/" + Option : "",
+                !String.IsNullOrEmpty(Value) && IsOption ? ":" : "",
                 Value);
         
         }

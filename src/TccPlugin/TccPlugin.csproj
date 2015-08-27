@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumerableHelper.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="PluginMethodAttribute.cs" />
     <Compile Include="Parser\CommandLine.cs" />
@@ -90,10 +91,6 @@
     <Compile Include="TakeCmd\TccPluginInfo.cs" />
     <Compile Include="TccEventManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="sdk\TakeCmd.h" />
-    <Content Include="doc\TakeCmdAPI.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

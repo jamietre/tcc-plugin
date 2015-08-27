@@ -30,9 +30,32 @@ namespace TccPlugin.TakeCmd
     
         private static void PopulateCommands() {
             _Commands = new Dictionary<TccCommandName, TccCommand>();
-            _Commands.Add(TccCommandName.CD, new TccCommand("CD", TccLib.Cd_Cmd));
-            _Commands.Add(TccCommandName.CDD, new TccCommand("CDD", TccLib.Cdd_Cmd));
-            _Commands.Add(TccCommandName.DIR, new TccCommand("DIR", TccLib.Dir_Cmd));
+
+            // Note that for CD we purposely don't expose the /D option, since it conflicts with 
+            // using /D as drive D, and is automatically used anyway
+            _Commands.Add(TccCommandName.CD, new TccCommand("CD", TccLib.Cd_Cmd,
+                EnumerableHelper.Enumerate(
+                    new TccArg("N"),
+                    new TccArg("X")
+            )));
+
+            _Commands.Add(TccCommandName.CDD, new TccCommand("CDD", TccLib.Cdd_Cmd,
+                EnumerableHelper.Enumerate(
+                    new TccArg("A"),
+                    new TccArg("D", true),
+                    new TccArg("N", true),
+                    new TccArg("S", true),
+                    new TccArg("U", true),
+                    new TccArg("X", true),
+                    new TccArg("T"),
+                    new TccArg("TO")
+                )
+            ));
+            _Commands.Add(TccCommandName.DIR, new TccCommand("DIR", TccLib.Dir_Cmd, 
+                EnumerableHelper.Enumerate(
+                    new TccArg("1"),
+                    new TccArg("2")
+                )));
         }
 
 

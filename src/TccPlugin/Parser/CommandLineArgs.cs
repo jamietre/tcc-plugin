@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TccPlugin.Parser
 {
-    public class CommandLineArgs: IEnumerable<CommandLineArg>
+    public class CommandLineArgs: IList<CommandLineArg>
     {
         /// <summary>
         /// Map a command line, passing each argument 
@@ -32,9 +32,13 @@ namespace TccPlugin.Parser
         public static CommandLineArgs Map(string args, Func<string, string> transform)
         {
             var clArgs = new CommandLineArgs(args);
-            return new CommandLineArgs(clArgs.Select(item => {
+            return new CommandLineArgs(clArgs
+                .Select(item => {
                 var newArg = CommandLineArg.Clone(item);
-                newArg.Value = transform(item.Value);
+                if (item.Value != null)
+                {
+                    newArg.Value = transform(item.Value);
+                }
                 return newArg;
             }));
         }
@@ -48,7 +52,7 @@ namespace TccPlugin.Parser
             
             if (!String.IsNullOrEmpty(text))
             {
-                var parts = text.Trim().Split(' ');
+                var parts = text.Trim().Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
 
                 Args = new List<CommandLineArg>(parts.Select(item=>new CommandLineArg(item)));
             }
@@ -76,6 +80,68 @@ namespace TccPlugin.Parser
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public int IndexOf(CommandLineArg item)
+        {
+            return Args.IndexOf(item);
+        }
+
+        public void Insert(int index, CommandLineArg item)
+        {
+            Args.Insert(index, item);
+        }
+
+        public void RemoveAt(int index)
+        {
+            Args.RemoveAt(index);
+        }
+
+        public CommandLineArg this[int index]
+        {
+            get
+            {
+                return Args[index];
+            }
+            set
+            {
+                Args[index] = value;
+            }
+        }
+
+        public void Add(CommandLineArg item)
+        {
+            Args.Add(item);
+        }
+
+        public void Clear()
+        {
+            Args.Clear();
+        }
+
+        public bool Contains(CommandLineArg item)
+        {
+            return Args.Contains(item);
+        }
+
+        public void CopyTo(CommandLineArg[] array, int arrayIndex)
+        {
+            Args.CopyTo(array, arrayIndex);
+        }
+
+        public int Count
+        {
+            get { return Args.Count; }
+        }
+
+        public bool IsReadOnly
+        {
+            get { return false; }
+        }
+
+        public bool Remove(CommandLineArg item)
+        {
+            return Args.Remove(item);
         }
     }
 }

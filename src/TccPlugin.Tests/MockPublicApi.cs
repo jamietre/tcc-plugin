@@ -14,34 +14,31 @@ namespace TccPlugin.Tests
     public static class MockPublicApi
     {
 
-        [PluginMethod]
-        [DllExport("ShutdownPlugin", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport]
         private static int ShutdownPlugin(int bEndProcess)
         {
             return 0;
         }
 
-        [PluginMethod]
-        [DllExport("GetPluginInfo", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport]
         private static IntPtr GetPluginInfo(IntPtr hModule)
         {
             return new IntPtr();
         }
 
-        [PluginMethod]
-        [DllExport("InitializePlugin", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport]
         private static int InitializePlugin()
         {
             return 0;
         }
 
-        [DllExport("UNKNOWN_CMD", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport, PluginMethod]
         private static int UNKNOWN_CMD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             return 0;
         }
 
-        [DllExport("key", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport, PluginMethod]
         private static int key(IntPtr keyInfoPtr)
         {
             return 0;
@@ -52,25 +49,25 @@ namespace TccPlugin.Tests
         /// </summary>
         /// <param name="sb"></param>
         /// <returns></returns>
-        [DllExport("CD", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport, PluginMethod]
         private static uint CD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             return 0;
         }
 
-        [DllExport("DIR", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport, PluginMethod]
         private static uint DIR([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             return 0;
         }
 
-        [DllExport("f_testfunc", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport, PluginMethod]
         private static uint f_testfunc([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             return 0;
         }
 
-        [DllExport("_testvar", CallingConvention = CallingConvention.Cdecl)]
+        [DllExport, PluginMethod]
         private static uint _testvar([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             return 0;

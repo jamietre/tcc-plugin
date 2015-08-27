@@ -32,6 +32,7 @@ namespace TildeSupport
             Loader = new ExternalLoader(Tcc);
         }
 
+        private static Configuration Config;
         private static TccCommands Tcc;
         private static ExternalLoader Loader;
 
@@ -77,13 +78,17 @@ namespace TildeSupport
         [PluginMethod, DllExport]
         private unsafe static uint CD([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
-            return Tcc.ExecuteCmd(TccCommandName.CD, sb.ToString());
+            return Tcc.ProcessCmd(TccCommandName.CD, sb, (args) =>
+            {
+                args.Insert(0, "/D");
+            }); 
+            
         }
 
         [PluginMethod, DllExport]
         public unsafe static uint DIR([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
-            return Helpers.MapCommands(sb);
+            return Tcc.ProcessCmd(TccCommandName.DIR, sb);
         }
 
         [PluginMethod, DllExport]
@@ -101,6 +106,16 @@ namespace TildeSupport
             loader.Explorer(sb.ToStringTrimmed());
             return 0;
         }
+
+        [PluginMethod, DllExport]
+        public unsafe static uint SPAWN([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            var loader = new ExternalLoader(Tcc);
+            loader.Explorer(sb.ToStringTrimmed());
+            return 0;
+        }
+
+
 
         #endregion
 

@@ -9,23 +9,17 @@ namespace TccPlugin.TakeCmd
 {
     public unsafe class TccCommandExecutor
     {
-        /// <summary>
-        /// A default handler for mapping paths. Any method invoked involving a file path parameter
-        /// should automatically use this to pre-process the path (if present)
-        /// </summary>
-        /// <returns></returns>
-        public Func<string, string> MapPath
-        {
-            get;
-            set;
-        }
 
+        /// <summary>
+        /// Execute the specificied TCC commmand. 
+        /// </summary>
+        /// <param name="action"></param>
+        /// <param name="text"></param>
+        /// <returns></returns>
         public uint Execute(TccLib.TCAction action, string text)
         {
-            var args = ParseArgs(text);
-
             uint result;
-            fixed (char* textPtr = args.ToString())
+            fixed (char* textPtr = text.ToString())
             {
                 result = action(textPtr);
             }
@@ -41,10 +35,8 @@ namespace TccPlugin.TakeCmd
         /// <returns></returns>
         public uint Execute(TccLib.TCAction2 action, string text, int parm)
         {
-            var args = ParseArgs(text);
-
             uint result;
-            fixed (char* textPtr = args.ToString())
+            fixed (char* textPtr = text.ToString())
             {
                 result = action(textPtr, parm);
             }
@@ -52,26 +44,5 @@ namespace TccPlugin.TakeCmd
             return result;
         }
 
-        public CommandLineArgs ParseArgs(StringBuilder sb)
-        {
-            return ParseArgs(sb.ToString());
-        }
-
-        public CommandLineArgs ParseArgs(string commandLine)
-        {
-            var cmd = new CommandLineArgs(commandLine);
-
-            if (MapPath != null)
-            {
-                foreach (var arg in cmd.Where(item => !item.IsSwitch))
-                {
-                    arg.Value = MapPath(arg.Value);
-
-                }
-            }
-
-            return cmd;
-
-        }
     }
 }

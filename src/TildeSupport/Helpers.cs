@@ -27,7 +27,15 @@ namespace TildeSupport
             {
                 path = TccCommands.ExpandVariables("%HOMEDRIVE%%HOMEPATH%") + path.Substring(1);
             }
+
             path = FixSlashes(path);
+
+            if (path[0] == '\\' && path.Length > 1 && IsAlpha(path[1]) &&
+                (path.Length == 2 || (path.Length > 2 && path[2] == '\\'))) {
+                    path = path[1] + ":\\" + (path.Length > 3 ?
+                        path.Substring(3) :
+                        "");
+            }
 
             return path;
         }
@@ -36,5 +44,10 @@ namespace TildeSupport
         {
             return path.Replace("/", "\\");
         }
+        private static bool IsAlpha(char c) {
+            return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+        }
     }
+
+   
 }
