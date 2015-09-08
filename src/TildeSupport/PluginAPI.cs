@@ -110,11 +110,59 @@ namespace TildeSupport
         [PluginMethod, DllExport]
         public unsafe static uint SPAWN([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
-            var loader = new ExternalLoader(Tcc);
-            loader.Explorer(sb.ToStringTrimmed());
+            //if (sb.ToStringTrimmed() == String.Empty)
+            //{
+            //    return SPAWNED(sb);
+            //}
+
+            var loader = new ProcessInfo(Tcc);
+            loader.Spawn(sb.ToStringTrimmed());
             return 0;
         }
 
+        [PluginMethod, DllExport]
+        public unsafe static uint SPAWNED([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            var processes = ProcessInfo.GetRunningProcessesWithChildren();
+
+            Console.WriteLine(processes.Any() ?
+                String.Join(System.Environment.NewLine, 
+                processes.Select(item=>ProcessInfo.FormatProcess(item))) :
+                "No running processes were spawned from this console.");
+
+            return 0;
+        }
+
+        [PluginMethod, DllExport]
+        public unsafe static uint KILL([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            int pid;
+            if (!int.TryParse(sb.ToStringTrimmed(), out pid)) {
+                Console.WriteLine("Must pass PID to kill.");
+                return 0;
+            }
+
+            ProcessInfo.Kill(pid);
+            return 0;
+
+
+        }
+
+
+        [PluginMethod, DllExport]
+        public unsafe static uint _STARTPID([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            sb.Replace(ProcessInfo.LastPID.ToString());
+            return 0;
+        }
+
+        [PluginMethod, DllExport]
+        public unsafe static uint _STARTPIDS([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+
+            sb.Replace(String.Join(",", ProcessInfo.RunningPIDs));
+            return 0;
+        }
 
 
         #endregion

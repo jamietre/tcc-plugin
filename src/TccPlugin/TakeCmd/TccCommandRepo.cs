@@ -56,9 +56,12 @@ namespace TccPlugin.TakeCmd
                     new TccArg("1"),
                     new TccArg("2")
                 )));
+
+            _Commands.Add(TccCommandName.START, new TccCommand("START", TccLib.Start_Command));
+
+            _Commands.Add(TccCommandName.SET, new TccCommand("SET", TccLib.Start_Command));
+        
         }
-
-
 
     }
 }

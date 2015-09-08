@@ -15,7 +15,7 @@ namespace TccPlugin.TakeCmd
         /// <summary>
         /// Command line buffer size
         /// </summary>
-        public const int BUF_SIZE = 508;
+        public const int BUF_SIZE = 511;
 
         /// <summary>
         /// Special return value that says continue to process same named command. You can use this to rewrite a 
@@ -42,6 +42,15 @@ namespace TccPlugin.TakeCmd
         [DllImport("TakeCmd.dll", EntryPoint="Command")]
         internal static extern uint TC_Command(char* text, int reserved);
 
+        [DllImport("TakeCmd.dll", EntryPoint = "Start_Cmd")]
+        internal static extern uint Start_Command(char* command);
+
+        [DllImport("TakeCmd.dll", EntryPoint = "Set_Cmd")]
+        internal static extern uint Set_Command(char* command);
+        
+        [DllImport("TakeCmd.dll", EntryPoint = "MakeFullName")]
+        internal static extern char* TC_MakeFullName(char* pszFileName, uint fFlags);
+        
         #endregion
 
         #region private methods

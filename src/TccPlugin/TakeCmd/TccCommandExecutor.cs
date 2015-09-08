@@ -19,7 +19,7 @@ namespace TccPlugin.TakeCmd
         public uint Execute(TccLib.TCAction action, string text)
         {
             uint result;
-            fixed (char* textPtr = text.ToString())
+            fixed (char* textPtr = TccCommands.GetBuffer(text))
             {
                 result = action(textPtr);
             }
@@ -36,7 +36,7 @@ namespace TccPlugin.TakeCmd
         public uint Execute(TccLib.TCAction2 action, string text, int parm)
         {
             uint result;
-            fixed (char* textPtr = text.ToString())
+            fixed (char* textPtr = TccCommands.GetBuffer(text))
             {
                 result = action(textPtr, parm);
             }

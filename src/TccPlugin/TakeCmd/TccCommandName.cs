@@ -11,7 +11,9 @@ namespace TccPlugin.TakeCmd
     {
         CD = 1,
         CDD = 2, 
-        DIR = 3
+        DIR = 3,
+        START = 4,
+        SET = 5
 
     }
 }

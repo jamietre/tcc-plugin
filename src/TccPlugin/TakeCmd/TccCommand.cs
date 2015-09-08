@@ -28,7 +28,7 @@ namespace TccPlugin.TakeCmd
             Name = name.ToUpper();
             var defaultOpts = EnumerableHelper.Enumerate(new TccArg("?"));
 
-            _Options = new HashSet<TccArg>(options.Concat(defaultOpts) ?? defaultOpts);
+            _Options = new HashSet<TccArg>((options ?? defaultOpts).Concat(defaultOpts) );
             WinApiCmd = winApiCmd;
         }
 

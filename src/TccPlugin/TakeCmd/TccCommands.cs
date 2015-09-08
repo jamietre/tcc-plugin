@@ -140,8 +140,7 @@ namespace TccPlugin.TakeCmd
         /// <returns></returns>
         public static string ExpandVariables(string text)
         {
-            char[] chars = new char[TccLib.BUF_SIZE];
-            text.CopyTo(0, chars, 0, text.Length);
+            var chars = GetBuffer(text);
 
             fixed (char* textPtr = chars)
             {
@@ -149,6 +148,21 @@ namespace TccPlugin.TakeCmd
 
                 return chars.ToStringSafe();
             }
+        }
+
+        /// <summary>
+        /// Take a file name and expand to full path
+        /// </summary>
+        public static string MakeFullName(string fileName)
+        {
+            var chars = GetBuffer(fileName);
+
+            string fullPath;
+            fixed (char* textPtr = chars)
+            {
+                fullPath = new string(TccLib.TC_MakeFullName(textPtr, 0));
+            }
+            return fullPath;
         }
 
         /// <summary>
@@ -200,6 +214,18 @@ namespace TccPlugin.TakeCmd
             argument.Value = MapPath(argument.ToString());
             argument.IsOption=false;
 
+        }
+
+        /// <summary>
+        /// Get a buffer for passing strings to TCCLIB
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public static char[] GetBuffer(string text)
+        {
+            char[] chars = new char[TccLib.BUF_SIZE];
+            text.CopyTo(0, chars, 0, text.Length);
+            return chars;
         }
     }
 }

@@ -37,6 +37,16 @@ namespace TccPlugin
             return sb.ToString().Trim();
         }
 
+        //public static unsafe string CharPtrToString(char* text)
+        //{
+        //    var sb = new StringBuilder();
+        //    do
+        //    {
+
+        //    }
+        //    while (text++!='\0');
+        //}
+        
         
     }
 }
