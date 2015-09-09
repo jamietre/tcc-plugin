@@ -23,7 +23,7 @@ namespace TildeSupport
 
         public void Load(string loader, string text)
         {
-            var fullPath = TccCommands.MakeFullName(text);
+            var fullPath = Tcc.MakeFullName(text);
 
             Tcc.Command("C:/Program Files/Sublime Text 3/subl.exe",  fullPath );
         }

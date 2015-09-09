@@ -153,9 +153,9 @@ namespace TccPlugin.TakeCmd
         /// <summary>
         /// Take a file name and expand to full path
         /// </summary>
-        public static string MakeFullName(string fileName)
+        public string MakeFullName(string fileName)
         {
-            var chars = GetBuffer(fileName);
+            var chars = GetBuffer(MapPath(fileName));
 
             string fullPath;
             fixed (char* textPtr = chars)

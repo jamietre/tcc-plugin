@@ -4,7 +4,7 @@ C# framework for creating plugins for the [TCC](https://jpsoft.com/tccle-cmd-rep
 
 ##Status
 
-
+* **9/9/2015**: Basic API implemented. Adding features to the increasingly badly named [TildePlugin](./TildePlugin.md)
 * **8/18/2015**: It's brand new, but it seems to work.
 
 ##How to use
