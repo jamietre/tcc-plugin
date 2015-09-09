@@ -82,17 +82,16 @@ After loading a plugin just attach the debugger to `tcc` process.
 * Try to figure out why we must space-pad the command line when replacing it with something shorter
 * Test 32 bit dll (only tried 64 so far)
 
-###My actual plugin that will to make TCC awesome
-* Intercept all builtins to map ~ to home directory
-* Add launchers to open windows apps based on file extension
-* Figure out how to make TabComplete work with ~/ .. e.g. intercept tab key, then invoke TabComplete after reparsing path??
+##Some caveats
 
+The interop with `TccLib.dll` and the plugin callbacks is not very well documented. While the SDK on JpSoft's web site has headers for the library, there are nonintuitive things. For example, trial and error leads us to ensure that whenever we pass a pointer to a string as input, make sure it contains a buffer large enough to accept significant changes, *even when the parameter appears to be for input only*. That is, many methods seem to write to input parameters even when the output is the return value. It's pretty common to deal with access violations when adding new WIN32 API method calls.
+
+Another caveat: I have no idea what the upper bound for a command line buffer in TCC is; I am using 512 bytes but this is arbitrary.
 
 ##Warning
 
 I am know almost nothing about working with unmanaged memory from C#. Everything you see here I learned in one day. This may cause memory leaks or any number of other problems. Use at your own risk. If I am doing something wrong, please let me know the right way.
  
-
 ##Why
 
 There is a distinct lack of a basic usable shell for Windows. Mintty under Cygwin can be set up well (e.g. Babun & zsh) but Cygwin doesn't work well for some things - particularly Node. Cygwin is also kind of slow.
