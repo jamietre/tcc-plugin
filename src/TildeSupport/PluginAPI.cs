@@ -147,7 +147,13 @@ namespace TildeSupport
 
 
         }
+        [PluginMethod, DllExport]
+        public unsafe static uint CONFIG([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            TccEventManager.LoadConfig();
+            return 0;
 
+        }
 
         [PluginMethod, DllExport]
         public unsafe static uint _STARTPID([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)

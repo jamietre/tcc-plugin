@@ -1,0 +1,19 @@
+﻿{
+    "launchers": {
+        "sublime": {
+            "path": "C:/Program Files/Sublime Text 3/subl.exe",
+            "args": "{file}",
+            "create": false,
+            "default":  true
+        },
+        "markdown": {
+            "path": "c:/Program Files (x86)/MarkdownPad 2/MarkdownPad2.exe",
+            "create": true,
+            "extensions":  "md"
+        },
+        "chrome": {
+            "path": "c:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+            "extensions":  "html"
+        }
+    }
+}

@@ -85,6 +85,9 @@
     <Compile Include="Helpers.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="TildeSupport.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

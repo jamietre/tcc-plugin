@@ -4,17 +4,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Reflection;
+using System.IO;
+using System.Web.Script.Serialization;
 using RGiesecke.DllExport;
 using TccPlugin.Parser;
 using TccPlugin.TakeCmd;
+using TccPlugin.Configuration;
+
 
 namespace TccPlugin
 {
     public static class TccEventManager
     {
+        public static PluginConfig Config = new PluginConfig();
 
         public static void Register(PluginInfo clientPluginInfo) {
             ClientPluginInfo = clientPluginInfo;
+        }
+
+        public static void LoadConfig()
+        {
+            var assy = Assembly.GetCallingAssembly();
+            var assyName = assy.GetName().Name;
+
+            var assyFolder = Path.GetDirectoryName(assy.Location);
+            var configFile = assyFolder + "\\" + assyName + ".json";
+            if (File.Exists(configFile))
+            {
+                var jsonConfig = File.ReadAllText(configFile).Replace("\r", "").Replace("\n", "");
+
+                var serializer = new JavaScriptSerializer();
+                
+                var dict = serializer.Deserialize<Dictionary<string,object>>(jsonConfig);
+                Config = new PluginConfig(dict);
+            }
         }
 
         private static PluginInfo ClientPluginInfo;
