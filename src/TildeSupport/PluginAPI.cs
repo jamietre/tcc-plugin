@@ -41,6 +41,7 @@ namespace TildeSupport
         [DllExport]
         private static uint InitializePlugin()
         {
+            TccEventManager.LoadConfig();
             return TccEventManager.InitializePlugin();
         }
 
@@ -123,11 +124,24 @@ namespace TildeSupport
         [PluginMethod, DllExport]
         public unsafe static uint SPAWNED([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
-            var processes = ProcessInfo.GetRunningProcessesWithChildren();
+            var processes = ProcessInfo.GetMyProcessesWithChildren();
 
             Console.WriteLine(processes.Any() ?
                 String.Join(System.Environment.NewLine, 
                 processes.Select(item=>ProcessInfo.FormatProcess(item))) :
+                "No running processes were spawned from this console.");
+
+            return 0;
+        }
+
+        [PluginMethod, DllExport]
+        public unsafe static uint PLIST([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            var processes = new Processes.ProcessList();
+
+            Console.WriteLine(processes.Any() ?
+                String.Join(System.Environment.NewLine,
+                processes.Select(item => Processes.ProcessFormatter.FormatProcess(item))) :
                 "No running processes were spawned from this console.");
 
             return 0;

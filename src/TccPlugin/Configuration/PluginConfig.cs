@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,42 @@ namespace TccPlugin.Configuration
         public object Get(string path)
         {
             return _Get(Source, path.Split('.'));
+        }
+
+        public PluginConfig GetNode(string path)
+        {
+            return (PluginConfig)_Get(Source, path.Split('.'));
+        }
+
+        public string GetString(string path)
+        {
+            return (string)_Get(Source, path.Split('.'));
+        }
+
+        /// <summary>
+        /// Attemp to get a config value for the named path, and return a provided default value instead if not found
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="?"></param>
+        /// <returns></returns>
+        public string GetString(string path, string defawlt)
+        {
+            var value = _Get(Source, path.Split('.'));
+            return value == Undefined.Instance ?
+                defawlt :
+                (string)value;
+        }
+
+        public T[] GetArray<T>(string path)
+        {
+            ArrayList arrayList = (ArrayList)_Get(Source, path.Split('.'));
+            T[] array = new T[arrayList.Count];
+            int index = 0;
+            foreach (var item in arrayList) {
+                array[index++] = (T)Convert.ChangeType(item, typeof(T));
+            }
+            return array;
+
         }
 
         private object _Get(IDictionary<string, object> source, IEnumerable<string> path)

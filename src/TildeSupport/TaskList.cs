@@ -12,20 +12,29 @@ using System.Diagnostics;
 
 namespace TildeSupport
 {
-    public class TaskList
+    public class TaskList: IEnumerable<Process>
     {
         public TaskList(string name)
         {
             ProcessCache  = new TaskCache
             {
                 Name = name,
-                Processes = Process.GetProcessesByName(name)
+                Processes = Process.GetProcessesByName(name).ToList()
+            };
+        }
+
+        public TaskList()
+        {
+            ProcessCache = new TaskCache
+            {
+                Name = null,
+                Processes = Process.GetProcesses().ToList()
             };
         }
 
         private class TaskCache
         {
-            public Process[] Processes { get; set; }
+            public List<Process> Processes { get; set; }
             public string Name { get; set; }
         }
 
@@ -39,12 +48,12 @@ namespace TildeSupport
         {
             var cache = ProcessCache;
 
-            var current = Process.GetProcessesByName(cache.Name);
-            
-            var ids = current.Select(item=>item.Id)
-                .Except(cache.Processes.Select(item=>item.Id));
-            
-            return current.Where(item=>ids.Contains(item.Id));
+            var current = Process.GetProcessesByName(cache.Name ?? "");
+
+            var ids = current.Select(item => item.Id)
+                .Except(cache.Processes.Select(item => item.Id));
+
+            return current.Where(item => ids.Contains(item.Id));
         }
 
         /// <summary>
@@ -55,6 +64,17 @@ namespace TildeSupport
         public IEnumerable<Process> Filter(IEnumerable<int> pidList)
         {
             return ProcessCache.Processes.Where(item=>pidList.Contains(item.Id));
+        }
+
+
+        public IEnumerator<Process> GetEnumerator()
+        {
+            return ProcessCache.Processes.ToList().GetEnumerator();
+        }
+
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }

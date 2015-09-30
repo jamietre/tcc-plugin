@@ -25,19 +25,34 @@ namespace TccPlugin
 
         public static void LoadConfig()
         {
-            var assy = Assembly.GetCallingAssembly();
-            var assyName = assy.GetName().Name;
-
-            var assyFolder = Path.GetDirectoryName(assy.Location);
-            var configFile = assyFolder + "\\" + assyName + ".json";
-            if (File.Exists(configFile))
+            string configFile="";
+            try
             {
-                var jsonConfig = File.ReadAllText(configFile).Replace("\r", "").Replace("\n", "");
+                var assy = Assembly.GetCallingAssembly();
+                var assyName = assy.GetName().Name ?? "";
+                if (String.IsNullOrEmpty(assy.Location))
+                {
+                    throw new ArgumentException("No assembly location provided for calling assembly");
+                }
+                var assyFolder = Path.GetDirectoryName(assy.Location) ?? "";
 
-                var serializer = new JavaScriptSerializer();
+                configFile = assyFolder + "\\" + assyName + ".json";
+
                 
-                var dict = serializer.Deserialize<Dictionary<string,object>>(jsonConfig);
-                Config = new PluginConfig(dict);
+                if (File.Exists(configFile))
+                {
+                    
+                    var jsonConfig = File.ReadAllText(configFile).Replace("\r", "").Replace("\n", "");
+
+                    var serializer = new JavaScriptSerializer();
+
+                    var dict = serializer.Deserialize<Dictionary<string, object>>(jsonConfig);
+                    Config = new PluginConfig(dict);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error loading " + configFile + ": " + e.Message);
             }
         }
 

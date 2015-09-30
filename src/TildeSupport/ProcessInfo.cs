@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using TccPlugin.Parser;
 using TccPlugin.TakeCmd;
 using TccPlugin;
@@ -39,7 +40,7 @@ namespace TildeSupport
         {
             get
             {
-                return GetRunningProcesses().Select(item=>item.Id);
+                return GetMyRunningProcesses().Select(item=>item.Id);
             }
         }
 
@@ -47,12 +48,44 @@ namespace TildeSupport
         {
             var TaskList = new TaskList("tcc");
 
-            Tcc.ExecuteCmd(TccCommandName.START, "/B /C /PGM " + text + " <NUL");
-            var processes = TaskList.Compare();
-            Process process;
+            //Tcc.ExecuteCmd(TccCommandName.START, "/B /C /PGM " + text + " <NUL");
+
+            var parts = Regex.Matches(text, @"[\""].+?[\""]|[^ ]+")
+                .Cast<Match>()
+                .Select(m => m.Value.Trim())
+                .ToList();
+
+            var exePath = FileHelper.FindInSearchPath(parts.First());
+            if (String.IsNullOrEmpty(exePath))
+            {
+                Console.WriteLine("Unable to find '{0}' in search path");
+            }
+            var task = new ProcessStartInfo(exePath);
+            task.Arguments = String.Join(" ", parts.Skip(1));
+            task.CreateNoWindow = true;
+            task.UseShellExecute=false;
+            task.RedirectStandardOutput = true;
+            task.RedirectStandardError = true;
+            task.StandardErrorEncoding = Encoding.UTF8;
+            task.StandardOutputEncoding= Encoding.UTF8;
+
+            var pr = new Process();
+            pr.StartInfo = task;
+            pr.ErrorDataReceived += process_DataReceived;
+            pr.OutputDataReceived += process_DataReceived;
+            pr.EnableRaisingEvents = true;
+
+            pr.Start();
+            pr.BeginErrorReadLine();
+            pr.BeginOutputReadLine();
+
+            //var processes = TaskList.Compare();
+            
+            //Process process;
             try {
-                process = processes.Single();
-                var pid = process.Id;
+                //process = processes.Single();
+                //var pid = process.Id;
+                var pid = pr.Id;
                 LastPID = pid;
                 SpawnedPIDs.Add(pid);
 
@@ -64,10 +97,19 @@ namespace TildeSupport
             }
         }
 
+        void process_DataReceived(object sender, DataReceivedEventArgs e)
+        {
+            Console.WriteLine(e.Data);
+        }
+
+        public static IEnumerable<Process> GetMyRunningProcesses()
+        {
+            return new TaskList("tcc").Where(item=>SpawnedPIDs.Contains(item.Id));
+        }
+
         public static IEnumerable<Process> GetRunningProcesses()
         {
-            var TaskList = new TaskList("tcc");
-            return TaskList.Filter(SpawnedPIDs);            
+            return new TaskList();
         }
 
         public static  ProcessWrapper GetProcessById(int pid)
@@ -105,10 +147,22 @@ namespace TildeSupport
             return (string)enumerator.Current["CommandLine"];
         }
 
-        public static IEnumerable<ProcessWrapper> GetRunningProcessesWithChildren()
+        public static IEnumerable<ProcessWrapper> GetMyProcessesWithChildren()
+        {
+            var myProcesses = GetMyRunningProcesses();
+            return GetChildProcesses(myProcesses);
+        }
+
+        public static IEnumerable<ProcessWrapper> GetAllProcessesWithChildren()
+        {
+            var myProcesses = GetRunningProcesses();
+            return GetChildProcesses(myProcesses);
+        }
+
+        public static IEnumerable<ProcessWrapper> GetChildProcesses(IEnumerable<Process> processes)
         {
 
-            return ProcessInfo.GetRunningProcesses().SelectMany(item =>
+            return processes.SelectMany(item =>
             {
                 var items = new List<ProcessWrapper>();
                 items.Add(new ProcessWrapper(item));
