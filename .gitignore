@@ -3,3 +3,4 @@ sdk/
 src/**/bin/
 src/**/obj/
 src/packages
+wkscli.pdb/

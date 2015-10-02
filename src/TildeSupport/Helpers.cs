@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TccPlugin.Parser;
 using TccPlugin.TakeCmd;
 using TccPlugin;
+using System.Runtime.CompilerServices;
 
 namespace TildeSupport
 {
@@ -47,7 +48,21 @@ namespace TildeSupport
         private static bool IsAlpha(char c) {
             return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
         }
+        public static T Safe<T>(Func<T> method, [CallerMemberName]string memberName="")
+        {
+            T result;
+            try
+            {
+                result = method();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(String.Format("An error occurred in {0}: {1}", memberName, e.Message));
+                return default(T);
+            }
+            return result;
+            
+        }
     }
 
-   
 }

@@ -165,6 +165,15 @@ namespace TccPlugin.TakeCmd
             return fullPath;
         }
 
+        public void WriteStdout(string text)
+        {
+            var chars = GetBuffer(text);
+
+            fixed (char* textPtr = chars)
+            {
+                TccLib.TC_QPuts(textPtr);
+            }
+        }
         /// <summary>
         /// A default handler for mapping paths. Any method invoked involving a file path parameter
         /// should automatically use this to pre-process the path (if present)

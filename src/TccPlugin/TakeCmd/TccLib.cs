@@ -51,6 +51,11 @@ namespace TccPlugin.TakeCmd
         [DllImport("TakeCmd.dll", EntryPoint = "MakeFullName")]
         internal static extern char* TC_MakeFullName(char* pszFileName, uint fFlags);
         
+        [DllImport("TakeCmd.dll", EntryPoint="wwriteXP")]
+        internal static extern uint TC_wwriteXP(IntPtr hFile, char* pszString, uint nLength);
+
+        [DllImport("TakeCmd.dll", EntryPoint="QPuts")]
+        internal static extern uint TC_QPuts(char* pszString);
         #endregion
 
         #region private methods

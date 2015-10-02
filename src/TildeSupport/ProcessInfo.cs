@@ -44,7 +44,11 @@ namespace TildeSupport
             }
         }
 
-        public void Spawn(string text)
+        /// <summary>
+        /// Spawn a new process that is detached from the parent process of this
+        /// </summary>
+        /// <param name="text"></param>
+        public int Spawn(string text)
         {
             var TaskList = new TaskList("tcc");
 
@@ -88,18 +92,18 @@ namespace TildeSupport
                 var pid = pr.Id;
                 LastPID = pid;
                 SpawnedPIDs.Add(pid);
-
-                Console.Write(String.Format("Started with PID {0}", pid));
+                return pid;
             }
             catch (Exception e)
             {
                 Console.WriteLine("Unable to determine new process ID.");
             }
+            return -1;
         }
 
         void process_DataReceived(object sender, DataReceivedEventArgs e)
         {
-            Console.WriteLine(e.Data);
+            Tcc.WriteStdout(e.Data);
         }
 
         public static IEnumerable<Process> GetMyRunningProcesses()

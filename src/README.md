@@ -4,7 +4,9 @@ The architecture is a little tricky because of several competing concerns
 
 1) We use [RGiesecke.DllExport.Metadata](https://www.nuget.org/packages/UnmanagedExports) to export methods from managed code to the native API. This does **not** work with "Any Cpu" targets. You will need to build separately for 32 and 64 bit applications. 
 
-2) We use [Costura.Fody](https://www.nuget.org/packages/Costura.Fody/) to put the dependencies into a single DLL. This packages dependencies as a resource and loads them from memory. ILMerge is not possible after `DllExport` because it does not work with unmanaged code.
+2) We use [Costura.Fody](https://www.nuget.org/packages/Costura.Fody/) to put the dependencies into a single DLL. This packages dependencies as a resource and loads them from memory. ILMerge is not possible after `DllExport` because it does not work with unmanaged code, this allows us to still distribute a single DLL even when using unmanaged code.
+
+3) The "full" debug info (Build > Advanced) must be included even in release builds. The plugin will crash when loading otherwise. I am not sure why this is. Possibly [this](http://stackoverflow.com/a/11508380/480527)?
 
 Both of these packages, as well as `TccPlugin`,  should be dependencies of the actual plugin project.  
 

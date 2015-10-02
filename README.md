@@ -4,10 +4,9 @@ C# framework for creating plugins for the [TCC](https://jpsoft.com/tccle-cmd-rep
 
 ##Status
 
-* **9/30/2015**: Some more features added, SPAWN changed to detach new process from shell. There are some issues still. Only works when compiled with Debug target right now.
-
+* **9/30/2015**: Some more features added, `spawn` changed to detach new process from shell. There are some issues still with `spawned` which used to expect process to be children of the shell. It needs to be updated.
 * **9/9/2015**: Basic API implemented. Adding features to the increasingly badly named [TildePlugin](./TildePlugin.md)
-* **8/18/2015**: It's brand new, but it seems to work.
+* **8/18/2015**: It's  brand new, but it seems to work.
 
 ##How to use
 

@@ -25,7 +25,7 @@ namespace TildeSupport
                 WebSite = "https://github.com/jamietre/tcc-plugin"
 
             });
-            
+
             Tcc = new TccCommands();
             Tcc.MapPath = Helpers.MapPath;
 
@@ -111,35 +111,52 @@ namespace TildeSupport
         [PluginMethod, DllExport]
         public unsafe static uint SPAWN([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
-            //if (sb.ToStringTrimmed() == String.Empty)
-            //{
-            //    return SPAWNED(sb);
-            //}
+            return Helpers.Safe<uint>(() =>
+            {
+                
+                if (sb.ToStringTrimmed() == String.Empty)
+                {
+                    return _SPAWNED(sb);
+                }
 
-            var loader = new ProcessInfo(Tcc);
-            loader.Spawn(sb.ToStringTrimmed());
-            return 0;
+                var loader = new ProcessInfo(Tcc);
+                var pid = loader.Spawn(sb.ToStringTrimmed());
+                Console.WriteLine(String.Format("Started with PID {0}", pid));
+                return 0;
+            });
+            
+
+            
         }
 
         [PluginMethod, DllExport]
         public unsafe static uint SPAWNED([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
+            return Helpers.Safe<uint>(() =>
+            {
+                return _SPAWNED(sb);
+            });
+        }
+
+        private static uint _SPAWNED(StringBuilder sb)
+        {
             var processes = ProcessInfo.GetMyProcessesWithChildren();
 
-            Console.WriteLine(processes.Any() ?
-                String.Join(System.Environment.NewLine, 
-                processes.Select(item=>ProcessInfo.FormatProcess(item))) :
+            Tcc.WriteStdout(processes.Any() ?
+                String.Join(System.Environment.NewLine,
+                processes.Select(item => ProcessInfo.FormatProcess(item))) :
                 "No running processes were spawned from this console.");
 
             return 0;
         }
+            
 
         [PluginMethod, DllExport]
         public unsafe static uint PLIST([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             var processes = new Processes.ProcessList();
 
-            Console.WriteLine(processes.Any() ?
+            Tcc.WriteStdout(processes.Any() ?
                 String.Join(System.Environment.NewLine,
                 processes.Select(item => Processes.ProcessFormatter.FormatProcess(item))) :
                 "No running processes were spawned from this console.");
@@ -150,9 +167,10 @@ namespace TildeSupport
         [PluginMethod, DllExport]
         public unsafe static uint KILL([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
+
             int pid;
             if (!int.TryParse(sb.ToStringTrimmed(), out pid)) {
-                Console.WriteLine("Must pass PID to kill.");
+                Tcc.WriteStdout("Must pass PID to kill.");
                 return 0;
             }
 
