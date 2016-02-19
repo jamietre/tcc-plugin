@@ -232,6 +232,7 @@ namespace TccPlugin.TakeCmd
         /// <returns></returns>
         public static char[] GetBuffer(string text)
         {
+            text = text ?? "";
             char[] chars = new char[TccLib.BUF_SIZE];
             text.CopyTo(0, chars, 0, text.Length);
             return chars;

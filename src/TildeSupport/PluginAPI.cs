@@ -8,11 +8,15 @@ using RGiesecke.DllExport;
 using TccPlugin;
 using TccPlugin.Parser;
 using TccPlugin.TakeCmd;
+using System.Diagnostics;
+using System.IO;
+using System.Reflection;
 
 namespace TildeSupport
 {
     public static class TildeSupportPlugin
     {
+
 
         static TildeSupportPlugin()
         {
@@ -30,6 +34,21 @@ namespace TildeSupport
             Tcc.MapPath = Helpers.MapPath;
 
             Loader = new ExternalLoader(Tcc);
+
+            //LoadAssemblies();
+        }
+
+        
+
+        private static void LoadAssemblies() {
+            var loadedAssemblies = AppDomain.CurrentDomain.GetAssemblies().ToList();
+
+            loadedAssemblies
+                .SelectMany(x => x.GetReferencedAssemblies())
+                .Distinct()
+                .Where(y => loadedAssemblies.Any((a) => a.FullName == y.FullName) == false)
+                .ToList()
+                .ForEach(x => loadedAssemblies.Add(AppDomain.CurrentDomain.Load(x)));
         }
 
         //private static Configuration Config;
@@ -179,12 +198,75 @@ namespace TildeSupport
 
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sb"></param>
+        /// <returns></returns>
         [PluginMethod, DllExport]
         public unsafe static uint CONFIG([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
         {
             TccEventManager.LoadConfig();
             return 0;
 
+        }
+
+        [PluginMethod, DllExport]
+        public unsafe static uint _GITBRANCH([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            string output = runCommand("git", "status -s -b --porcelain").Replace("\r", "");
+
+            string[] parts = output.Split(new string[] { "\n"}, StringSplitOptions.RemoveEmptyEntries);
+
+            // format ## master...origin/master [ahead 2]
+            // format ## master...origin/master [behind 2]
+
+            string branch = "";
+            string offset = "";
+            string changed = "";
+
+            if (parts.Length > 0)
+            {
+                if (parts.Length > 1)
+                {
+                    changed = "*";
+                }
+                string text = parts[0];
+                int pos = text.IndexOf("...");
+                
+                
+                if (pos >= 0) {
+                    branch = text.Substring(3, pos - 3);
+                } else {
+                    branch = text.Substring(3);
+                }
+
+                pos = text.IndexOf("[", Math.Max(pos, 0));
+                if (pos >= 0) {
+                    offset = text.Substring(pos).Trim().Replace("ahead ", "+").Replace("behind ", "-");
+                }
+                
+
+                if (!string.IsNullOrEmpty(branch))
+                {
+                    branch = " " + changed + branch + offset;
+                }
+            }
+
+            sb.Replace(branch);
+            
+            return 0;
+        }
+
+        [PluginMethod, DllExport]
+        public unsafe static uint _PATHLAST([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            // get current folder
+            var path = TccCommands.ExpandVariables("%CD");
+            var parts = path.Split('\\');
+            sb.Replace(String.Join("/", parts.Reverse().Take(2).Reverse()));
+            return 0;
         }
 
         [PluginMethod, DllExport]
@@ -200,6 +282,75 @@ namespace TildeSupport
 
             sb.Replace(String.Join(",", ProcessInfo.RunningPIDs));
             return 0;
+        }
+
+
+
+        [PluginMethod, DllExport]
+        public unsafe static uint f_TESTFUNC([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            sb.Replace(sb.ToString() + "-");
+            return 0;
+        }
+
+
+        private static RunJs.JsEngine Engine;
+
+        [PluginMethod, DllExport]
+        public static uint f_JS([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            if (Engine == null)
+            {
+                Engine = new RunJs.JsEngine();
+            }
+            string raw = sb.ToString().Trim();
+
+            try
+            {
+                var result = Engine.Execute(ParseJsInput(raw));
+                if (result != RunJs.JsValue.Undefined) {
+                    sb.Replace(ParseJsOutput(result.ToString()));
+                }
+            }
+            catch(Exception e) {
+                sb.Replace(e.Message);
+            }
+         
+            return 0;
+        }
+
+        private static string ParseJsInput(string text)
+        {
+
+            if (text.Length >= 2 && text[0] == '\"' && text[text.Length - 1] == '\"')
+            {
+                text = text.Substring(1, text.Length - 2);
+            }
+            return text.Replace("\"\"", "\"");
+        }
+
+
+        private static string ParseJsOutput(string text)
+        {
+            return text.Replace("\\\\","\\");
+        }
+
+        private static string runCommand(string command, string args)
+        {
+            Process p = new Process();
+            // Redirect the output stream of the child process.
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.StartInfo.RedirectStandardError = true;
+            p.StartInfo.Arguments = args;
+            p.StartInfo.FileName = command;
+            p.Start();
+
+            string output = p.StandardOutput.ReadToEnd() ?? "";
+
+            p.WaitForExit();
+
+            return output;
         }
 
 

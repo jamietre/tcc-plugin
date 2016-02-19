@@ -7,11 +7,9 @@ using System.Runtime.InteropServices;
 using System.Reflection;
 using System.IO;
 using System.Web.Script.Serialization;
-using RGiesecke.DllExport;
 using TccPlugin.Parser;
 using TccPlugin.TakeCmd;
 using TccPlugin.Configuration;
-
 
 namespace TccPlugin
 {
@@ -42,17 +40,22 @@ namespace TccPlugin
                 if (File.Exists(configFile))
                 {
                     
-                    var jsonConfig = File.ReadAllText(configFile).Replace("\r", "").Replace("\n", "");
+                    var jsonConfig = File.ReadAllText(configFile, Encoding.UTF8)
+                        .Replace("\r", "").Replace("\n", "");
 
                     var serializer = new JavaScriptSerializer();
 
-                    var dict = serializer.Deserialize<Dictionary<string, object>>(jsonConfig);
+                    Dictionary<string, object> dict = new Dictionary<string, object>();
+                    dict = serializer.Deserialize<Dictionary<string, object>>(jsonConfig);
+
+
+                    Config = new PluginConfig(dict);
                     Config = new PluginConfig(dict);
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error loading " + configFile + ": " + e.Message);
+                Console.WriteLine("Error loading " + configFile + ": " + e.Message + e.InnerException.Message );
             }
         }
 
@@ -147,6 +150,7 @@ namespace TccPlugin
             return 0;
 
         }
+
 
     }
 }

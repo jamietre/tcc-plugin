@@ -60,7 +60,8 @@ namespace TildeSupport
                 .ToList();
 
             var exePath = FileHelper.FindInSearchPath(parts.First());
-            if (String.IsNullOrEmpty(exePath))
+
+            if (string.IsNullOrEmpty(exePath))
             {
                 Console.WriteLine("Unable to find '{0}' in search path");
             }
@@ -96,7 +97,7 @@ namespace TildeSupport
             }
             catch (Exception e)
             {
-                Console.WriteLine("Unable to determine new process ID.");
+                Console.WriteLine("Unable to determine new process ID: "+ e.Message);
             }
             return -1;
         }

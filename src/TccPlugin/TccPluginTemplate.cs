@@ -46,6 +46,46 @@ namespace TccPlugin
             return TccEventManager.Key(keyInfoPtr);
         }
 
+        /// <summary>
+        /// Custom Commands pass the contents of the command line (except the command iteslf) as the argument. 
+        /// </summary>
+        /// <param name="sb">The arguments to the command</param>
+        /// <returns></returns>
+        [PluginMethod, DllExport]
+        public unsafe static uint CUSTOM_COMMAND([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            /// .. do something
+            return 0;
+        }
+
+        /// <summary>
+        /// Dynamic variables are evaluated using this code each time they are accessed. Use the extension method
+        /// sb.Replace(...) to return their value. In TCC you access a variable as %_DYNAMIC_VARIABLE
+        /// </summary>
+        /// <param name="sb"></param>
+        /// <returns></returns>
+        [PluginMethod, DllExport]
+        public unsafe static uint _DYNAMIC_VARIABLE([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb) {
+            sb.Replace("value of variable");
+            return 0;
+        }
+
+
+        /// <summary>
+        /// Custom functions are similar to dynamic variables but can take input.
+        /// They are accessed as %@CUSTOM_FUNC[arguments]
+        /// </summary>
+        /// <param name="sb"></param>
+        /// <returns></returns>
+        [PluginMethod, DllExport]
+        public unsafe static uint f_CUSTOM_FUNC([MarshalAs(UnmanagedType.LPTStr)] StringBuilder sb)
+        {
+            sb.Replace("result of function evaluation");
+            return 0;
+        }
+
+        /// These methods are supposed to be supported but I couldn't get them to work.
+
         //[DllExport("PRE_INPUT", CallingConvention = CallingConvention.Cdecl)]
         //public static int PRE_INPUT([MarshalAs(UnmanagedType.LPTStr)] StringBuilder ignored)
         //{

@@ -48,7 +48,7 @@ namespace TildeSupport
         private static bool IsAlpha(char c) {
             return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
         }
-        public static T Safe<T>(Func<T> method, [CallerMemberName]string memberName="")
+        public static T Safe<T>(Func<T> method, /*[CallerMemberName]*/string memberName="")
         {
             T result;
             try

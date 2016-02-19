@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Weavers>
-  <Costura  IncludeDebugSymbols='true'>
-  </Costura> 
+  <Costura DisableCompression="true" CreateTemporaryAssemblies="true">
+    <IncludeAssemblies>
+      Jint
+      RunJs
+      TccPlugin
+    </IncludeAssemblies>
+    <PreloadOrder>
+      Jint
+      RunJs
+      TccPlugin
+    </PreloadOrder>
+  </Costura>
 </Weavers>

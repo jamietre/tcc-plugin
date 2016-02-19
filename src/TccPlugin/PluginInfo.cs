@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Reflection;
-using RGiesecke.DllExport;
-
 
 namespace TccPlugin
 {
@@ -29,8 +27,9 @@ namespace TccPlugin
                 return type.GetMethods(BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public)
                     .Where(method =>
                     {
-                        return method.CustomAttributes
-                            .Count(attr => attr.AttributeType == typeof(PluginMethodAttribute)) > 0;
+                        return method.GetCustomAttributes(true)
+                            .Select(item=>(Attribute)item)
+                            .Count(attr => attr.GetType()== typeof(PluginMethodAttribute)) > 0;
                     });
             });
 

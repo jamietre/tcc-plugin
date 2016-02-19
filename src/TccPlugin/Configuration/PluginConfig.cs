@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TccPlugin.Configuration
 {
-    public class PluginConfig: IReadOnlyDictionary<string, object>
+    public class PluginConfig: IDictionary<string, object>
     {
         public PluginConfig()
         {
@@ -113,6 +113,10 @@ namespace TccPlugin.Configuration
         public object this[string key]
         {
             get { return Get(key); }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public int Count
@@ -128,6 +132,57 @@ namespace TccPlugin.Configuration
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public void Add(string key, object value)
+        {
+            throw new NotImplementedException();
+        }
+
+        ICollection<string> IDictionary<string, object>.Keys
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        public bool Remove(string key)
+        {
+            throw new NotImplementedException();
+        }
+
+        ICollection<object> IDictionary<string, object>.Values
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+      
+        public void Add(KeyValuePair<string, object> item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Clear()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Contains(KeyValuePair<string, object> item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CopyTo(KeyValuePair<string, object>[] array, int arrayIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsReadOnly
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        public bool Remove(KeyValuePair<string, object> item)
+        {
+            throw new NotImplementedException();
         }
     }
 }
